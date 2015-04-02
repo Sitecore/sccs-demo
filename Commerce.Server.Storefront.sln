@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSettings", "Common\CommonSettings\CommonSettings.csproj", "{7B5BFDC5-7552-4EF0-807B-D9B60A78B3FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Project\Common.csproj", "{8450F330-0271-4091-8809-C671CCD50671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commerce.Storefront", "CS\CSF\Commerce.Storefront.csproj", "{304F09AD-2FC3-453F-B016-50A1F842E3A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B5BFDC5-7552-4EF0-807B-D9B60A78B3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5BFDC5-7552-4EF0-807B-D9B60A78B3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5BFDC5-7552-4EF0-807B-D9B60A78B3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5BFDC5-7552-4EF0-807B-D9B60A78B3FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8450F330-0271-4091-8809-C671CCD50671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8450F330-0271-4091-8809-C671CCD50671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8450F330-0271-4091-8809-C671CCD50671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8450F330-0271-4091-8809-C671CCD50671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{304F09AD-2FC3-453F-B016-50A1F842E3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304F09AD-2FC3-453F-B016-50A1F842E3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304F09AD-2FC3-453F-B016-50A1F842E3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{304F09AD-2FC3-453F-B016-50A1F842E3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
