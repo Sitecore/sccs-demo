@@ -213,6 +213,7 @@ namespace Sitecore.Reference.Storefront.Managers
                 commerceUser.LastName = inputModel.LastName;
                 commerceUser.Email = inputModel.Email;
                 commerceUser.SetPropertyValue("Phone", inputModel.TelephoneNumber);
+                this.CurrentSiteContext.CurrentContext.Profile.SetPropertyValue("user_preference", inputModel.UserPreference);
 
                 try
                 {
