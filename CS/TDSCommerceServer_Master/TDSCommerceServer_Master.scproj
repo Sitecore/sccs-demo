@@ -48,7 +48,7 @@
 You have now read the Readme.
 </PackageReadme>
     <SitecoreAssemblyPath>..\..\Lib\Sitecore</SitecoreAssemblyPath>
-    <GeneratePackage>True</GeneratePackage>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
     <EnableValidations>True</EnableValidations>
