@@ -189,6 +189,12 @@ namespace Sitecore.Reference.Storefront.Controllers
             model.EmailRepeat = commerceUser.Email;
             model.LastName = commerceUser.LastName;
             model.TelephoneNumber = commerceUser.GetPropertyValue("Phone") as string;
+            model.AvailableInterests = this.GetProfileInterests();
+
+            if (Context.User.Profile.GetPropertyValue("user_preference") != null)
+            {
+                model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
+            }
 
             return View(this.GetRenderingView("EditProfile"), model);
         }
@@ -420,6 +426,12 @@ namespace Sitecore.Reference.Storefront.Controllers
                     model.Email = commerceUser.Email;
                     model.LastName = commerceUser.LastName;
                     model.TelephoneNumber = commerceUser.GetPropertyValue("Phone") as string;
+                    
+                    if (Context.User.Profile.GetPropertyValue("user_preference") != null)
+                    {
+                        model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
+                    }
+                    
                 }
             }
 
@@ -731,6 +743,21 @@ namespace Sitecore.Reference.Storefront.Controllers
             }
 
             return Redirect("/");
+        }
+
+        /// <summary>
+        /// Gets the Profile Interests available for the Profile
+        /// </summary>
+        /// <returns></returns>
+        protected virtual Dictionary<string, string> GetProfileInterests()
+        {
+            var interests = new Dictionary<string, string>();
+            var InterestItem = Sitecore.Context.Database.GetItem("/sitecore/content/Storefront/Global/Lookups/Profile Interests");
+            foreach (Item child in InterestItem.Children)
+            {
+                interests.Add(child.Name, child.Fields["Value"].ToString());
+            }
+            return interests;
         }
 
         private Dictionary<string, string> GetAvailableCountries(AddressListItemJsonResult result)
