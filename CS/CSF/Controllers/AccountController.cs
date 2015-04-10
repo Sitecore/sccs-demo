@@ -189,8 +189,12 @@ namespace Sitecore.Reference.Storefront.Controllers
             model.EmailRepeat = commerceUser.Email;
             model.LastName = commerceUser.LastName;
             model.TelephoneNumber = commerceUser.GetPropertyValue("Phone") as string;
-            model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
             model.AvailableInterests = this.GetProfileInterests();
+
+            if (Context.User.Profile.GetPropertyValue("user_preference") != null)
+            {
+                model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
+            }
 
             return View(this.GetRenderingView("EditProfile"), model);
         }
@@ -422,7 +426,12 @@ namespace Sitecore.Reference.Storefront.Controllers
                     model.Email = commerceUser.Email;
                     model.LastName = commerceUser.LastName;
                     model.TelephoneNumber = commerceUser.GetPropertyValue("Phone") as string;
-                    model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
+                    
+                    if (Context.User.Profile.GetPropertyValue("user_preference") != null)
+                    {
+                        model.UserPreference = Context.User.Profile.GetPropertyValue("user_preference").ToString();
+                    }
+                    
                 }
             }
 
