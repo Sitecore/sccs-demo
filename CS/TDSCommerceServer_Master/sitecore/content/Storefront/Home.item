@@ -55,9 +55,9 @@ contoso
 field: {239412BD-046D-4C97-98BA-17B5FB07F004}
 name: ShopName
 key: shopname
-content-length: 10
+content-length: 7
 
-Storefront
+website
 ----field----
 field: {0D2D45C1-783B-4A72-A797-F5907BC37CFE}
 name: DefaultCartName
@@ -88,8 +88,8 @@ content-length: 15
 10|20|25|50|100
 ----field----
 field: {A8925EB2-72E3-4636-9F21-C894A61975B8}
-name: Sender Mail Address
-key: sender mail address
+name: Sender Email Address
+key: sender email address
 content-length: 41
 
 no-reply@sitecore.commerce.storefront.com
@@ -124,8 +124,22 @@ content-length: 312
 ----version----
 language: en
 version: 1
-revision: 337530e0-52f7-481d-8407-fd53198416e8
+revision: 3cfaf56e-9ee1-4bc6-8f53-7859522e269b
 
+----field----
+field: {EC1F4944-D675-42F6-B354-A0A1BF04BFF8}
+name: Title
+key: title
+content-length: 20
+
+Reference Storefront
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 1297
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{5D2C83EE-F8CA-41B9-BBF2-03CBC74D3F52}"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="B80A169D34D24A40BB4DD3EA457A04B4" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{B77DF5FC-DD81-43D7-8C86-65323A2FBCBC}"><rls><ruleset><rule uid="{75AF599F-FD7D-4BEC-A437-8C4677089E46}" s:name="Camping"><conditions><condition uid="6BC743122D454639A1AF33AFDA4A0A28" s:id="{A612EF3B-BC95-4D9D-BDED-A29706FE756B}" s:FieldName="user_preference" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:Value="Camping" /></conditions><actions><action uid="4DA0F45DC9DC4A02B8484B4A886F1BE2" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{4B78857E-7A5D-4E64-AF0C-C5CB114460CD}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="9BD37647527A4AC3AE28249F129714CC" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions><action uid="6F054ADC1E3E498EB41D6C696E6837C6" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{6FDBA2A7-5C7E-468C-8906-9DC8464843D2}" /></actions></rule></ruleset></rls></r></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -146,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-337530e0-52f7-481d-8407-fd53198416e8
+3cfaf56e-9ee1-4bc6-8f53-7859522e269b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150318T152817:635622892976330011Z
+20150409T164312:635641945920513398Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

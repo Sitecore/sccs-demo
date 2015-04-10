@@ -19,15 +19,15 @@ ar|sitecore\Commerce Administrator|pe|+item:create|+item:read|+item:rename|+item
 ----version----
 language: de-DE
 version: 1
-revision: d29a2898-734d-4855-9c06-81f29bb3e3e4
+revision: fbd1e9d0-1a1c-419f-baec-8b5e9930315d
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 8
+content-length: 17
 
-Commerce
+Sitecore Commerce
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -39,9 +39,9 @@ sitecore\Anonymous
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20140813T113605:635435265651943881
+20150326T225149:635630071090365602Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,21 +55,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d29a2898-734d-4855-9c06-81f29bb3e3e4
+fbd1e9d0-1a1c-419f-baec-8b5e9930315d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140813T114004:635435268045342829
+20150326T225301:635630071813056978Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 17
+content-length: 18
 
-default\Anonymous
+sitecore\Anonymous
 ----version----
 language: en
 version: 1
@@ -79,9 +79,9 @@ revision: 30ef860a-f997-4153-83ce-24772d6f08a9
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 23
+content-length: 17
 
-Commerce Server Connect
+Sitecore Commerce
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

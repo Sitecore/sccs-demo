@@ -29,13 +29,6 @@ version: 1
 revision: d27d395a-f12a-4231-9f3b-45f35714086c
 
 ----field----
-field: {C25982D9-ECD0-45C0-9E49-2ADE473CCE7C}
-name: Title
-key: title
-content-length: 5
-
-$name
-----field----
 field: {980BBF2B-C208-4A75-B9CA-E1C51B6C45D0}
 name: Submitting
 key: submitting

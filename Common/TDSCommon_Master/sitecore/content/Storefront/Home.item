@@ -15,21 +15,21 @@ name: Catalogs
 key: catalogs
 content-length: 38
 
-{3888B670-D875-516F-9896-6346D44EBCB9}
+{2C1225CC-24C0-496B-AEB7-7BEF84C0252A}
 ----field----
 field: {AE00DC8B-C90D-412F-B262-19EF55A20506}
 name: Product Images
 key: product images
-content-length: 38
+content-length: 0
 
-{7A0B1C91-9071-462F-AD46-D2A8125113F5}
+
 ----field----
 field: {A204F8D6-B81A-4C1B-88EF-2DBC9471C18A}
 name: Category Images
 key: category images
-content-length: 38
+content-length: 0
 
-{4D3C4042-25C9-4AE7-ADC0-69B3B1D28DF5}
+
 ----field----
 field: {FBF2BBA1-47BC-4B2E-BF76-133C8FAEA0FB}
 name: General Images
@@ -41,9 +41,9 @@ content-length: 38
 field: {6C86E9A8-D48A-4E3B-8375-B81414CE28E5}
 name: Default Image
 key: default image
-content-length: 38
+content-length: 0
 
-{FD06B3BC-90B7-478F-ABF9-588846D21C76}
+
 ----field----
 field: {268036A9-3394-4964-8CB3-AC4CA68BF4B4}
 name: RouteKey
@@ -124,7 +124,7 @@ content-length: 312
 ----version----
 language: en
 version: 1
-revision: 36d525fe-00d9-4c34-9751-7ddfff866aba
+revision: 3cfaf56e-9ee1-4bc6-8f53-7859522e269b
 
 ----field----
 field: {EC1F4944-D675-42F6-B354-A0A1BF04BFF8}
@@ -133,6 +133,13 @@ key: title
 content-length: 20
 
 Reference Storefront
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 1297
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{5D2C83EE-F8CA-41B9-BBF2-03CBC74D3F52}"><rls><ruleset><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="B80A169D34D24A40BB4DD3EA457A04B4" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions /></rule></ruleset></rls></r><r uid="{B77DF5FC-DD81-43D7-8C86-65323A2FBCBC}"><rls><ruleset><rule uid="{75AF599F-FD7D-4BEC-A437-8C4677089E46}" s:name="Camping"><conditions><condition uid="6BC743122D454639A1AF33AFDA4A0A28" s:id="{A612EF3B-BC95-4D9D-BDED-A29706FE756B}" s:FieldName="user_preference" s:operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}" s:Value="Camping" /></conditions><actions><action uid="4DA0F45DC9DC4A02B8484B4A886F1BE2" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{4B78857E-7A5D-4E64-AF0C-C5CB114460CD}" /></actions></rule><rule uid="{00000000-0000-0000-0000-000000000000}" s:name="Default"><conditions><condition uid="9BD37647527A4AC3AE28249F129714CC" s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" /></conditions><actions><action uid="6F054ADC1E3E498EB41D6C696E6837C6" s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}" s:DataSource="{6FDBA2A7-5C7E-468C-8906-9DC8464843D2}" /></actions></rule></ruleset></rls></r></d></r>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -153,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-36d525fe-00d9-4c34-9751-7ddfff866aba
+3cfaf56e-9ee1-4bc6-8f53-7859522e269b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150320T130224:635624533445291770Z
+20150409T164312:635641945920513398Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

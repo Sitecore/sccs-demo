@@ -13,9 +13,9 @@ templatekey: Commerce Navigation Item
 field: {2882072B-E310-406B-8DD9-B22C9EA4A0F3}
 name: CategoryDatasource
 key: categorydatasource
-content-length: 91
+content-length: 82
 
-/sitecore/Commerce/Catalog Management/Catalogs/Contoso Base Catalog/Departments/22565422989
+/sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon

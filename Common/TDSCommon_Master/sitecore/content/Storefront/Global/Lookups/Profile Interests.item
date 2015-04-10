@@ -1,47 +1,40 @@
 ----item----
 version: 1
-id: {A0616639-4BF9-4EBA-A6A6-AE9FC851AF63}
+id: {9A330ED2-79E0-43B3-8987-1F806C08BB5E}
 database: master
-path: /sitecore/content/Storefront/Home/Shop/*
-parent: {CE40089D-6E73-4562-BDAF-3989688C2B01}
-name: *
+path: /sitecore/content/Storefront/Global/Lookups/Profile Interests
+parent: {E5C0498A-7F54-4365-AE30-52A84370CC3F}
+name: Profile Interests
 master: {00000000-0000-0000-0000-000000000000}
-template: {9DE07365-6B42-464B-B819-5423B563095C}
-templatekey: Category Page
+template: {B59E0882-0880-421A-9E6D-1D065D99FAC3}
+templatekey: Inventory Statuses
 
 ----version----
 language: en
 version: 1
-revision: 4298e682-aae7-4a8d-84b0-611bc177f7ca
+revision: 478817bd-6d68-4e23-b9e4-532ad0777c19
 
-----field----
-field: {EC1F4944-D675-42F6-B354-A0A1BF04BFF8}
-name: Title
-key: title
-content-length: 1
-
-*
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150108T213308Z
+20150406T175814Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4298e682-aae7-4a8d-84b0-611bc177f7ca
+478817bd-6d68-4e23-b9e4-532ad0777c19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150320T125649:635624530091678865Z
+20150407T014154:635639677141137889Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

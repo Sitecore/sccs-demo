@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {87C331AE-3293-4FD1-A5F2-A625523F3019}
 templatekey: QuickLink
 
+----field----
+field: {5723C6B6-8A8A-4960-AEC8-050200AE62D2}
+name: Show when Authenticated
+key: show when authenticated
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
@@ -28,13 +35,6 @@ key: text
 content-length: 8
 
 Sign out
-----field----
-field: {5723C6B6-8A8A-4960-AEC8-050200AE62D2}
-name: Show when Authenticated
-key: show when authenticated
-content-length: 1
-
-1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

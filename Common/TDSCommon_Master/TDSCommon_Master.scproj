@@ -145,7 +145,15 @@ You have now read the Readme.
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Carousel Frontpage.item">
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Carousel Camping.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Carousel Climbing.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Carousel Default.item">
       <Icon>/temp/IconCache/Control/32x32/splitter_ver_h.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -160,17 +168,25 @@ You have now read the Readme.
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Slide 1.item">
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Conestoga.item">
       <Icon>/temp/IconCache/Multimedia/32x32/markstart_video_h.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Slide 2.item">
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Dunes.item">
       <Icon>/temp/IconCache/Multimedia/32x32/markstart_video_h.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Slide 3.item">
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Galaxy.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Morro.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Carousels\Slides\Frontpage\Scoutpride.item">
       <Icon>/temp/IconCache/Multimedia/32x32/markstart_video_h.png</Icon>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
@@ -196,6 +212,26 @@ You have now read the Readme.
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Inventory Statuses\PreOrderable.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Profile Interests.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Profile Interests\Biking.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Profile Interests\Camping.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Profile Interests\Hiking.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Lookups\Profile Interests\Kayaking.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -240,8 +276,20 @@ You have now read the Readme.
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Named Searches\On Sale.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
     <SitecoreItem Include="sitecore\content\Storefront\Global\Named Searches\Shop by brand.item">
       <Icon>/temp/IconCache/Applications/16x16/find.png</Icon>
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Product Search Lists.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Storefront\Global\Product Search Lists\Recommended Products.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
@@ -2417,6 +2465,10 @@ You have now read the Readme.
     <SitecoreItem Include="sitecore\templates\Storefront\Page Templates\Edit Profile Page\Labels\Surname.item">
       <ItemDeployment>DeployOnce</ItemDeployment>
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Storefront\Page Templates\Edit Profile Page\Labels\User Preference.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>DeployOnce</ItemDeployment>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Storefront\Page Templates\Edit Profile Page\Placeholders.item">
       <ItemDeployment>DeployOnce</ItemDeployment>

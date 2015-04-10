@@ -24,9 +24,63 @@ content-length: 38
 
 {6F2A43FA-30E7-4199-B7D4-8943A94FD6E1}
 ----version----
+language: de-DE
+version: 1
+revision: 65cb9eeb-fb16-4054-b800-c9df5160fca5
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 29
+
+Commerce dynamische Kategorie
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 35
+
+20150326T225149:635630071091145614Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+65cb9eeb-fb16-4054-b800-c9df5160fca5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150326T225301:635630071813997019Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\Anonymous
+----version----
 language: en
 version: 1
-revision: 6d58cb22-a135-4a26-9df2-5c67eeaba510
+revision: ca59bc21-3110-40cb-b0ce-ef183c08c551
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6d58cb22-a135-4a26-9df2-5c67eeaba510
+ca59bc21-3110-40cb-b0ce-ef183c08c551
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20130903T130959:635138105995822820
+20140415T154414:635331734542942831
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

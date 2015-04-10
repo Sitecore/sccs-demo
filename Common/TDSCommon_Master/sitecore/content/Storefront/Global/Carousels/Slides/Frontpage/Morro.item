@@ -1,26 +1,40 @@
 ----item----
 version: 1
-id: {6FDBA2A7-5C7E-468C-8906-9DC8464843D2}
+id: {0A37BB4A-55C0-45B2-B63C-DFAD6B01E576}
 database: master
-path: /sitecore/content/Storefront/Global/Carousels/Carousel Frontpage
-parent: {0D72BF2C-E9E1-483A-839E-444908C43402}
-name: Carousel Frontpage
+path: /sitecore/content/Storefront/Global/Carousels/Slides/Frontpage/Morro
+parent: {E73F80CF-979A-4749-904F-865A3118D4FC}
+name: Morro
 master: {00000000-0000-0000-0000-000000000000}
-template: {C37D966D-AE09-401E-84B9-FE0C2C70E342}
-templatekey: Carousel
+template: {158E6AD5-E873-42A8-87C9-01E9ABCD93EC}
+templatekey: Slide
 
 ----version----
 language: en
 version: 1
-revision: d1e8c546-cccd-4adf-b918-e874d88eb283
+revision: d3efcdfc-90d3-4122-84fa-40b7d6abf3da
 
 ----field----
-field: {891ED9B4-05DF-48BB-BE32-BE0CA2CD421B}
-name: Slides
-key: slides
-content-length: 116
+field: {51A720DA-CD19-4573-BF52-F90CEF743E9E}
+name: Image
+key: image
+content-length: 58
 
-{4565AD10-6D3C-48ED-B0BF-621E595880AA}|{946327B4-16D4-4EAF-8DCF-C57792C6295A}|{C2551CE4-6DDE-4666-9881-E79635DE7AE3}
+<image mediaid="{20D9EBA3-D1F0-488B-9255-0FC9F7AC2CF7}" />
+----field----
+field: {8368A4A8-B63D-4835-8478-1DAF2E4AF6F8}
+name: Title
+key: title
+content-length: 0
+
+
+----field----
+field: {035E53AD-6996-4C3C-9B2F-54221B60DCDC}
+name: Text
+key: text
+content-length: 0
+
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +48,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20141021T045021
+20141021T045359
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,18 +62,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1e8c546-cccd-4adf-b918-e874d88eb283
+d3efcdfc-90d3-4122-84fa-40b7d6abf3da
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20141021T045605:635494641650206247
+20150401T163847:635635031274950351Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
 content-length: 14
 
-sitecore\Admin
+sitecore\admin

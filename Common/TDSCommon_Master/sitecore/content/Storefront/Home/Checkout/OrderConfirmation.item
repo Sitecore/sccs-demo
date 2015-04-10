@@ -16,13 +16,6 @@ key: __sortorder
 content-length: 3
 
 350
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 37
-
-<r xmlns:p="p" xmlns:s="s" p:p="1" />
 ----version----
 language: en
 version: 1

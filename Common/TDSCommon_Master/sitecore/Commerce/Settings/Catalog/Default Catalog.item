@@ -13,13 +13,13 @@ templatekey: Commerce Catalog Setting Item
 field: {8BBC9900-067F-40EA-8500-8B2C247636F7}
 name: Catalog
 key: catalog
-content-length: 20
+content-length: 23
 
-Contoso Base Catalog
+Adventure Works Catalog
 ----version----
 language: de-DE
 version: 1
-revision: c7702714-ac88-41ab-bc53-b5d7ce5b8c94
+revision: 1cfb65cf-34d0-4220-bba5-47dda726a356
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -39,9 +39,9 @@ sitecore\Anonymous
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 34
+content-length: 35
 
-20140930T150920:635476865607705946
+20150326T225139:635630070999250367Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c7702714-ac88-41ab-bc53-b5d7ce5b8c94
+1cfb65cf-34d0-4220-bba5-47dda726a356
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 35
 
-20140930T150935:635476865754659402
+20150326T225252:635630071727822078Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +73,7 @@ sitecore\Anonymous
 ----version----
 language: en
 version: 1
-revision: c2686110-9eb5-462b-a642-b21d434b1bc4
+revision: 1753ed51-439a-4b74-adc7-ff51ee145fb7
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -102,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c2686110-9eb5-462b-a642-b21d434b1bc4
+1753ed51-439a-4b74-adc7-ff51ee145fb7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140930T200602:635477043626757908
+20131204T085424:635217440642815731
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

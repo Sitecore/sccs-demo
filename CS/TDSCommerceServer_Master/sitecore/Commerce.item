@@ -26,7 +26,7 @@ ar|sitecore\Commerce Administrator|pe|+item:create|+item:read|+item:rename|+item
 ----version----
 language: de-DE
 version: 1
-revision: 5b7c86e0-7c92-43e3-a517-d48d3b951b9f
+revision: 0acb819b-12fb-4a0b-894c-bd68b8fcb533
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 35
 
-20150125T105023:635577798234090518Z
+20150326T225203:635630071239804132Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5b7c86e0-7c92-43e3-a517-d48d3b951b9f
+0acb819b-12fb-4a0b-894c-bd68b8fcb533
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150125T105036:635577798363460514Z
+20150326T225311:635630071910502539Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

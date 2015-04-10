@@ -12,7 +12,7 @@ templatekey: Commerce Settings Folder
 ----version----
 language: de-DE
 version: 1
-revision: e64540a2-ba95-40e0-a9c9-b02564661ad5
+revision: 66f98759-6ea6-43e3-99d7-d09869607397
 
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 35
 
-20150125T113334:635577824149126702Z
+20150326T225148:635630071081195047Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e64540a2-ba95-40e0-a9c9-b02564661ad5
+66f98759-6ea6-43e3-99d7-d09869607397
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150125T113350:635577824301939200Z
+20150326T225300:635630071807626649Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
