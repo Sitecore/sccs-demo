@@ -10,3 +10,49 @@
 // and limitations under the License.
 // ------------------------------------------------------------------------------------------- */
 
+
+/******************************  PRODUCTS TABS  ******************************/
+/****** TODO: Modify this to suit our ACME design a little better ************/
+
+.product-slide {
+    padding-bottom: 5px;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid;
+}
+
+.nav-tabs > li > a {
+    border: 0px;
+    border-radius: 0px;
+    color: #555;
+}
+
+.nav-tabs > li > a {
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: lightgray;
+    color: #ffffff;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #428BCA;
+    border: 0px;
+}
+
+.nav-tabs.nav-justified > li > a {
+    border-bottom: 0px solid #DDD;
+    border-radius: 0px;
+}
+
+/******************************  PRODUCT CAROUSEL  ******************************/
+
+.col-item:hover {
+    border: 3px solid #ffffff;
+}

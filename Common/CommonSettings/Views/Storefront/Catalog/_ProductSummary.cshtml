@@ -30,7 +30,7 @@
             if (Model.Images != null && Model.Images.Count > 0)
             {
                 <a href="@Model.GetLink()">
-                    <img src="@Model.Images[0].GetImageUrl(300, 300)" class="img-responsive" alt="product image" title="@Model.DisplayName" />
+                    <img src="@Model.Images[0].GetImageUrl(150, 150)" class="img-responsive" alt="product image" title="@Model.DisplayName" />
                 </a>
             }
             else
@@ -45,7 +45,7 @@
         <div class="row">
             <div class="price col-md-12 col-xs-12">
                 <a href="@Model.GetLink()">
-                    <h5 class="twolines">@Model.DisplayName</h5>
+                    <h5>@Model.DisplayName</h5>
                 </a>
                 @if (@brand != null && @brand.Length > 0)
                 {
@@ -70,7 +70,7 @@
                         <span class="price-savings"></span>
                         <span class="if-no-before-price"></span>
                     }
-                    if (Model.StockStatus != null)
+                    @*if (Model.StockStatus != null)
                     {
                         <span pid="stockStatus" class="price-stock">@Html.DisplayFor(model => Model.StockStatusName)</span>
                         if (Model.StockAvailabilityDate != null)
@@ -86,10 +86,10 @@
                     {
                         <span class="price-stock">&nbsp;</span>
                         <span class="price-stock"></span>
-                    }
+                    }*@
                 }
             </div>
-            @if (!isCategory)
+            @*@if (!isCategory)
             {
                 <div class="rating hidden-sm hidden-xs col-md-12 col-xs-12">
                     <ul>
@@ -100,7 +100,7 @@
                         <li @(Model.CustomerAverageRating >= 5 ? "class=rated" : "")><span class="glyphicon glyphicon-star"></span></li>
                     </ul>
                 </div>
-            }
+            }*@
         </div>
         @if (!isCategory)
         {
