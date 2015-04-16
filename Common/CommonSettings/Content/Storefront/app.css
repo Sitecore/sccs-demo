@@ -56,3 +56,15 @@
 .col-item:hover {
     border: 3px solid #ffffff;
 }
+
+/******************************  MAIN NAVIGATION  *****************************/
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: lightgray;
+    color: #000;
+}
+
+.navbar-nav > li:hover, .navbar-nav > li a:hover {
+    background-color: lightgray;
+    color: #fff !important;
+}
