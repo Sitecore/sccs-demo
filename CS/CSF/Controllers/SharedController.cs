@@ -223,5 +223,32 @@ namespace Sitecore.Reference.Storefront.Controllers
         {
             return View(this.CurrentRenderingView, this.CurrentRenderingModel);
         }
+
+        /// <summary>
+        /// Gets the list of blog entries for the blog page
+        /// </summary>
+        /// <returns>BlogListing View</returns>
+        public ActionResult BlogListing()
+        {
+            return View(this.CurrentRenderingView);
+        }
+
+        /// <summary>
+        /// Used to display blog content in content spots throughout the site
+        /// </summary>
+        /// <returns>BlogContentDisplay view</returns>
+        public ActionResult BlogContentDisplay()
+        {
+            return View(this.CurrentRenderingView);
+        }
+
+        /// <summary>
+        /// Used to display a specific blog post in a content area
+        /// </summary>
+        /// <returns>BlogContentDisplay view</returns>
+        public ActionResult BlogContentDisplayItem()
+        {
+            return View(this.CurrentRenderingView);
+        }
     }
 }

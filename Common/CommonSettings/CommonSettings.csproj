@@ -278,6 +278,9 @@
     <Content Include="Views\Storefront\Catalog\ProductPresentation.cshtml" />
     <Content Include="sharplinter.conf" />
     <Content Include="Views\Storefront\Shared\_PrintLayout.cshtml" />
+    <Content Include="Views\Storefront\Shared\BlogListing.cshtml" />
+    <Content Include="Views\Storefront\Shared\BlogContentDisplay.cshtml" />
+    <Content Include="Views\Storefront\Shared\BlogContentDisplayItem.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

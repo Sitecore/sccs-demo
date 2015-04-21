@@ -1,0 +1,13 @@
+﻿<div class="col-md-6">
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Sitecore().Field("Feature Image", Html.Sitecore().CurrentItem, new { mw = 105, mh = 105, @as="true", @class="image-responsive" })
+        </div>
+        <div class="col-md-9">
+            <h2>@Html.Sitecore().Field("Title", Html.Sitecore().CurrentItem)</h2>
+            <p>@Html.Sitecore().Field("SummaryText", Html.Sitecore().CurrentItem)</p>
+            <p>&nbsp;</p>
+            <p><a class="btn btn-default" href="/Blog.aspx" role="button">Read More &raquo;</a></p>
+        </div>
+    </div>
+</div>

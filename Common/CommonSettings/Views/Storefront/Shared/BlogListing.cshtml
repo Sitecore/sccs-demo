@@ -1,0 +1,39 @@
+﻿<div class="col-md-1">
+    <p>&nbsp;</p>
+</div>
+<div class="col-md-11">
+    <div class="row">
+        <div class="col-md-10">
+            <h1>
+                @Html.Sitecore().Field("Title", Html.Sitecore().CurrentItem)
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <p>&nbsp;</p>
+    </div>
+    @foreach (Item item in Html.Sitecore().CurrentItem.GetChildren())
+    {
+        Sitecore.Data.Fields.ImageField image = item.Fields["Feature Image"];
+
+        <div class="row">
+            <div class="col-md-2 text-center">
+                @if (image != null && image.MediaItem != null)
+                {
+                    MediaItem imageMedia = image.MediaItem;
+                    <img src="@imageMedia.GetImageUrl(125, 125)" alt="@imageMedia.Alt" />
+                }
+            </div>
+            <div class="col-md-8">
+                <h2><a href="#">@item["Title"]</a></h2>
+                <p>
+                    @item["Text"].Substring(0, 400)...
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <p>&nbsp;</p>
+        </div>
+    }
+</div>
+
