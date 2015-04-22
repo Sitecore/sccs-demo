@@ -11,8 +11,7 @@
 // ------------------------------------------------------------------------------------------- */
 
 
-/******************************  PRODUCTS TABS  ******************************/
-/****** TODO: Modify this to suit our ACME design a little better ************/
+/******************************  PRODUCT NAVIGATION OVERRIDES ******************************/
 
 .product-slide {
     padding-bottom: 5px;
@@ -51,14 +50,6 @@
     border-radius: 0px;
 }
 
-/******************************  PRODUCT CAROUSEL  ******************************/
-
-.col-item:hover {
-    border: 3px solid #ffffff;
-}
-
-/******************************  MAIN NAVIGATION  *****************************/
-
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: lightgray;
     color: #000;
@@ -67,4 +58,59 @@
 .navbar-nav > li:hover, .navbar-nav > li a:hover {
     background-color: lightgray;
     color: #fff !important;
+}
+
+/******************************  PRODUCT CAROUSEL OVERRIDES ******************************/
+
+.col-item:hover {
+    border: 3px solid #ffffff;
+}
+
+/******************************  TOP NAVIGATION OVERRIDES *****************************/
+/****** TODO: Modify this to suit our ACME design a little better ************/
+
+.wrap-topbar {
+    background-color: #428BCA;
+    padding: 0px;
+}
+
+.quicklinks ul li a{
+    color: #fff;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quicklink-language {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/******************************  MINI-CART OVERRIDES *****************************/
+
+.minicart {
+    width: 100%;
+    z-index: 9999 !important;
+    padding: 6px;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 10px;
+    border: dotted 1px lightgrey;
+}
+
+.minicart-total{
+    color: #000;
+}
+
+/******************************  SEARCH BAR OVERRIDES *****************************/
+
+.search-bar {
+    min-height: 40px;
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+    padding-top: 5px;
+    vertical-align: middle;
 }
