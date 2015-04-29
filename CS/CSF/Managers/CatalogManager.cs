@@ -263,6 +263,10 @@ namespace Sitecore.Reference.Storefront.Managers
                 if (productsSearchResult != null)
                 {
                     productsSearchResult.DisplayName = search["title"];
+                    if (search.Fields["implicit"] != null)
+                    {
+                        productsSearchResult.Implicit = ((Sitecore.Data.Fields.CheckboxField)search.Fields["implicit"]).Checked;
+                    }
                     productsSearchResults.Add(productsSearchResult);
                 }
             }

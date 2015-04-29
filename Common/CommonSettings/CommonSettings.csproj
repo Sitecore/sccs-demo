@@ -281,6 +281,8 @@
     <Content Include="Views\Storefront\Shared\BlogListing.cshtml" />
     <Content Include="Views\Storefront\Shared\BlogContentDisplay.cshtml" />
     <Content Include="Views\Storefront\Shared\BlogContentDisplayItem.cshtml" />
+    <Content Include="Views\Storefront\Catalog\_FourProductSlideImplicit.cshtml" />
+    <Content Include="Views\Storefront\Catalog\ProductSummaryPersonalized.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

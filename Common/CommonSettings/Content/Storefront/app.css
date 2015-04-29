@@ -18,11 +18,11 @@
 }
 
 .nav-tabs {
-    border-bottom: 0px solid;
+    border: 0px;
 }
 
 .nav-tabs > li > a {
-    border: 0px;
+    border: 0px !important;
     border-radius: 0px;
     color: #555;
 }
@@ -42,11 +42,11 @@
     color: #fff;
     cursor: default;
     background-color: #428BCA;
-    border: 0px;
+    border: 0px !important;
 }
 
 .nav-tabs.nav-justified > li > a {
-    border-bottom: 0px solid #DDD;
+    border: 0px;
     border-radius: 0px;
 }
 
