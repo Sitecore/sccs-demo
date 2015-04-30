@@ -447,6 +447,11 @@ namespace Sitecore.Reference.Storefront.Models
         }
 
         /// <summary>
+        /// Gets the Discounts Associated with the product
+        /// </summary>
+        public List<string> Discounts { get; set; }
+
+        /// <summary>
         /// Initializes the model with the specified data
         /// </summary>
         /// <param name="rendering">The rendering associated to the current render</param>

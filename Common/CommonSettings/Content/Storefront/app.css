@@ -114,3 +114,27 @@
     padding-top: 5px;
     vertical-align: middle;
 }
+
+/******************************  PRODUCT PAGE OVERRIDES *****************************/
+
+.prod-info .description {
+    margin-top: 10px;
+    border-top: 0px;
+}
+
+.prod-info .features {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0px;
+}
+
+.prod-info .price-before {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0px;
+}
+
+.prod-variants-close {
+    border-bottom: 0px;
+    margin-bottom: 20px;
+}
