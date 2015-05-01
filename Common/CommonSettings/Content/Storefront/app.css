@@ -138,3 +138,28 @@
     border-bottom: 0px;
     margin-bottom: 20px;
 }
+
+/****************************** CART OVERRIDES *****************************/
+
+.row .cart h1 {
+  font-size: 36px;
+}
+
+.delete {
+    float: right;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.delete a {
+    color: #D9534F;
+}
+
+.delete a:hover {
+    text-decoration: none;
+    color: #a7312d;
+}
+
+.delete span {
+    vertical-align: 0px;
+}
