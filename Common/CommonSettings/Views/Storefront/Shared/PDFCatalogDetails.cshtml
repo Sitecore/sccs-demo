@@ -1,0 +1,9 @@
+﻿@{
+    Item item = Html.Sitecore().CurrentItem;
+    Sitecore.Data.Fields.FileField ff = item.Fields["PDF Document"];
+}
+
+<h1>@Html.Sitecore().Field(StorefrontConstants.ItemFields.Title)</h1>
+<p>@Html.Sitecore().Field("Text")</p>
+<p>&nbsp;</p>
+<p><a href="@ff.Src">View Catalog</a></p>

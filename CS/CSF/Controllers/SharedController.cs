@@ -250,5 +250,14 @@ namespace Sitecore.Reference.Storefront.Controllers
         {
             return View(this.CurrentRenderingView);
         }
+
+        /// <summary>
+        /// Used to display details about a PDF Catalog in the Media Library
+        /// </summary>
+        /// <returns>BlogContentDisplay view</returns>
+        public ActionResult PDFCatalogDetails()
+        {
+            return View(this.CurrentRenderingView);
+        }
     }
 }
