@@ -41,7 +41,7 @@
             @Model.RenderField("Features")
         </div>
     </div>
-    @if (Model.IsOnSale && Model.AdjustedPrice != null)
+    @if (Model.IsOnSale)
     {
         <div class="col-md-12 col-xs-12">
             <h3 class="price-now">
@@ -56,7 +56,7 @@
     else
     {
         <div class="col-md-12 col-xs-12">
-            <h3 class="price-now" id="price">@Html.DisplayFor(model => Model.ListPriceWithCurrency)</h3>
+            <h3 class="price-now" id="price">@Html.DisplayFor(model => Model.AdjustedPriceWithCurrency)</h3>
         </div>
     }
 

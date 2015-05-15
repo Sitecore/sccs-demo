@@ -57,7 +57,7 @@
                 }
                 @if (!isCategory)
                 {
-                    if (Model.IsOnSale && Model.AdjustedPrice != null)
+                    if (Model.IsOnSale)
                     {
                         <h4 class="price-text-color" pid="priceNow">@Html.DisplayFor(model => Model.AdjustedPriceWithCurrency)</h4>
                         <h5 class="price-before" pid="price">@Html.DisplayFor(model => Model.ListPriceWithCurrency)</h5>
@@ -65,7 +65,7 @@
                     }
                     else
                     {
-                        <h4 class="price-text-color" pid="price">@Html.DisplayFor(model => Model.ListPriceWithCurrency)</h4>
+                        <h4 class="price-text-color" pid="price">@Html.DisplayFor(model => Model.AdjustedPriceWithCurrency)</h4>
                         <h5 class="price-before"></h5>
                         <span class="price-savings"></span>
                         <span class="if-no-before-price"></span>
