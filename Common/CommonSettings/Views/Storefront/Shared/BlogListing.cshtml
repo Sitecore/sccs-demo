@@ -15,6 +15,7 @@
     @foreach (Item item in Html.Sitecore().CurrentItem.GetChildren())
     {
         Sitecore.Data.Fields.ImageField image = item.Fields["Feature Image"];
+        Sitecore.Data.Fields.HtmlField blogText = item.Fields["Text"];
 
         <div class="row">
             <div class="col-md-2 text-center">
@@ -25,9 +26,9 @@
                 }
             </div>
             <div class="col-md-8">
-                <h2><a href="#">@item["Title"]</a></h2>
+                <h2><a href="/Blog/@item["Title"]">@item["Title"]</a></h2>
                 <p>
-                    @item["Text"].Substring(0, 400)...
+                    @blogText.GetPlainText().Substring(0,300)
                 </p>
             </div>
         </div>
