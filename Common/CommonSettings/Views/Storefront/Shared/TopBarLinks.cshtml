@@ -15,7 +15,7 @@
     Sitecore.Data.Fields.MultilistField linksField = Model.Item.Fields["QuickLinks"];
     Item[] links = linksField != null ? linksField.GetItems() : new Item[0];
 
-    var myAccountAlt = Html.Sitecore().Field("My Account Alt", Model.Item);
+    var myAccountAlt = Html.Sitecore().Field("My Account Alt", Model.Item).ToString();
     var languages = Sitecore.Context.Database.GetItem("/sitecore/System/Languages");
 }
 <nav id="B05-TopBarLinks" class="quicklinks">
