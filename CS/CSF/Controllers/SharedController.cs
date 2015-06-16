@@ -198,6 +198,15 @@ namespace Sitecore.Reference.Storefront.Controllers
         }
 
         /// <summary>
+        /// Prints the only.
+        /// </summary>
+        /// <returns>The PrintOnly view.</returns>
+        public ActionResult PrintOnly()
+        {
+            return View(this.CurrentRenderingView);
+        }
+
+        /// <summary>
         /// Gets the Social connector.
         /// </summary>
         /// <returns>SocialConnector view</returns>
@@ -222,42 +231,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         public ActionResult TopBarLinks()
         {
             return View(this.CurrentRenderingView, this.CurrentRenderingModel);
-        }
-
-        /// <summary>
-        /// Gets the list of blog entries for the blog page
-        /// </summary>
-        /// <returns>BlogListing View</returns>
-        public ActionResult BlogListing()
-        {
-            return View(this.CurrentRenderingView);
-        }
-
-        /// <summary>
-        /// Used to display blog content in content spots throughout the site
-        /// </summary>
-        /// <returns>BlogContentDisplay view</returns>
-        public ActionResult BlogContentDisplay()
-        {
-            return View(this.CurrentRenderingView);
-        }
-
-        /// <summary>
-        /// Used to display a specific blog post in a content area
-        /// </summary>
-        /// <returns>BlogContentDisplay view</returns>
-        public ActionResult BlogContentDisplayItem()
-        {
-            return View(this.CurrentRenderingView);
-        }
-
-        /// <summary>
-        /// Used to display details about a PDF Catalog in the Media Library
-        /// </summary>
-        /// <returns>BlogContentDisplay view</returns>
-        public ActionResult PDFCatalogDetails()
-        {
-            return View(this.CurrentRenderingView);
         }
     }
 }

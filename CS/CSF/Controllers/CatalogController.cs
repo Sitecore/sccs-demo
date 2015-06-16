@@ -47,7 +47,8 @@ namespace Sitecore.Reference.Storefront.Controllers
     using Sitecore.Reference.Storefront.Models.InputModels;
     using Sitecore.Reference.Storefront.Models.JsonResults;
     using Sitecore.Reference.Storefront.ExtensionMethods;
-    using CommerceServer.Core.Runtime.Marketing;
+    using Sitecore.Reference.Storefront.Extensions;
+    using System.Web.UI;
 
     /// <summary>
     /// Used to manage the data and view retrieval for catalog pages
@@ -105,7 +106,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         /// Gets the catalog manager.
         /// </summary>
         public CatalogManager CatalogManager { get; private set; }
-
+        
         /// <summary>
         /// Gets or sets the gift card manager.
         /// </summary>
@@ -195,7 +196,7 @@ namespace Sitecore.Reference.Storefront.Controllers
 
                 var products = multipleProductSearchResults.ProductSearchResults.SelectMany(productSearchResult => productSearchResult.Products).ToList();
                 this.CatalogManager.GetProductBulkPrices(products);
-                this.CatalogManager.GetProductsStockStatus(products);
+                this.CatalogManager.InventoryManager.GetProductsStockStatus(this.CurrentStorefront, products);
 
                 foreach (var productViewModel in products)
                 {
@@ -203,8 +204,8 @@ namespace Sitecore.Reference.Storefront.Controllers
                         .SelectMany(productSearchResult => productSearchResult.SearchResultItems)
                         .Where(item => item.Name == productViewModel.ProductId).FirstOrDefault();
                     productViewModel.CustomerAverageRating = this.CatalogManager.GetProductRating(productItem);
-                }
-
+                } 
+                
                 return View(CurrentRenderingView, multipleProductSearchResults);
             }
 
@@ -400,7 +401,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         /// <returns>The action result.</returns>
         public ActionResult VisitedProductDetailsPage()
         {
-            this.CatalogManager.VisitedProductDetailsPage();
+            this.CatalogManager.VisitedProductDetailsPage(this.CurrentStorefront);
             return this.View(CurrentRenderingView);
         }
 
@@ -410,7 +411,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         /// <returns>The action result.</returns>
         public ActionResult VisitedCategoryPage()
         {
-            this.CatalogManager.VisitedCategoryPage();
+            this.CatalogManager.VisitedCategoryPage(this.CurrentStorefront);
             return this.View(CurrentRenderingView);
         }
 
@@ -438,22 +439,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         }
 
         /// <summary>
-        /// The action for rendering the product view for the implicit personalization content areas
-        /// </summary>
-        /// <returns>A product view</returns>
-        public ActionResult PersonalizedProduct()
-        {
-            var variants = new List<VariantViewModel>();
-            var productViewModel = new ProductViewModel(this.Item);
-            productViewModel.Initialize(CurrentRendering, variants);
-
-            this.CatalogManager.GetProductPrice(productViewModel);
-            productViewModel.CustomerAverageRating = this.CatalogManager.GetProductRating(this.Item);
-
-            return this.View(CurrentRenderingView, productViewModel);
-        }
-
-        /// <summary>
         /// The action for rendering the related catalog items.
         /// </summary>
         /// <returns>The related catalog items view</returns>
@@ -464,16 +449,16 @@ namespace Sitecore.Reference.Storefront.Controllers
             {
                 // This is a Wild Card
                 var productViewModel = this.GetWildCardProductViewModel();
-                var relatedCatalogItemsModel = this.CatalogManager.GetRelationshipsFromItem(productViewModel.Item, this.CurrentRendering);
+                var relatedCatalogItemsModel = this.CatalogManager.GetRelationshipsFromItem(this.CurrentStorefront, productViewModel.Item, this.CurrentRendering);
                 return this.View(CurrentRenderingView, relatedCatalogItemsModel);
             }
             else
             {
-                var relatedCatalogItemsModel = this.CatalogManager.GetRelationshipsFromItem(this.Item, this.CurrentRendering);
+                var relatedCatalogItemsModel = this.CatalogManager.GetRelationshipsFromItem(this.CurrentStorefront, this.Item, this.CurrentRendering);
                 return this.View(CurrentRenderingView, relatedCatalogItemsModel);
             }
         }
-
+        
         /// <summary>
         /// Checks the gift card balance.
         /// </summary>
@@ -513,6 +498,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         /// </returns>
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult GetCurrentProductStockInfo(ProductStockInfoInputModel model)
         {
             try
@@ -580,6 +566,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult CheckGiftCardBalance(GetGiftCardBalanceInputModel inputModel)
         {
             try
@@ -610,7 +597,7 @@ namespace Sitecore.Reference.Storefront.Controllers
                 return Json(new BaseJsonResult("CheckGiftCardBalance", e), JsonRequestBehavior.AllowGet);
             }
         }
-
+        
         /// <summary>
         /// Sign up visitor for product back in stock notification.
         /// </summary>
@@ -619,6 +606,7 @@ namespace Sitecore.Reference.Storefront.Controllers
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
         [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "SignUp")]
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult SignUpForBackInStockNotification(SignUpForNotificationInputModel model)
         {
             try
@@ -760,15 +748,13 @@ namespace Sitecore.Reference.Storefront.Controllers
             {
                 foreach (Item item in productItem.Children)
                 {
-                    var v = new VariantViewModel(item);
+                    var v = new VariantViewModel(item);                   
                     variants.Add(v);
                 }
             }
 
             var productViewModel = new ProductViewModel(productItem);
             productViewModel.Initialize(rendering, variants);
-            //Set Discount Info
-            productViewModel.Discounts = this.GetProductDiscountInfo(productItem);
 
             //Special handling for gift card
             if (productViewModel.ProductId == StorefrontManager.CurrentStorefront.GiftCardProductId)
@@ -783,34 +769,6 @@ namespace Sitecore.Reference.Storefront.Controllers
 
             this.CurrentSiteContext.Items[CurrentProductViewModelKeyName] = productViewModel;
             return productViewModel;
-        }
-
-        /// <summary>
-        /// Gets the Discount information for a product for display on the details page
-        /// TODO - Not sure this is the best way to do this. Investigate
-        /// </summary>
-        /// <param name="productItem">The item to get discount info</param>
-        /// <returns></returns>
-        protected List<string> GetProductDiscountInfo(Item productItem)
-        {
-            var _discounts = new List<string>();
-            DiscountItemCollection dic = DiscountItemCollection.CreateFromCache("Discounts");
-
-            DiscountCriteriaFilter filter = new DiscountCriteriaFilter();
-            filter.FilterOnAward = true;
-            filter.FilterOnCondition = false;
-            filter.IncludeDiscountsWithEligibilityRequirements = true;
-            filter.IncludeDiscountsWithPromoCodes = false;
-            filter.IncludeInactiveDiscounts = false;
-
-            DiscountItemCollection discounts = dic.ApplyProductFilter(filter, this.CurrentCatalog.Name, productItem.Name);
-
-            foreach (DiscountItem item in discounts)
-            {
-                _discounts.Add(item.GetBasketDisplay());
-            }
-
-            return _discounts;
         }
 
         /// <summary>
@@ -846,7 +804,7 @@ namespace Sitecore.Reference.Storefront.Controllers
             model.StockStatusName = StorefrontManager.GetProductStockStatusName(model.StockStatus);
             if (stockInfo.AvailabilityDate != null)
             {
-                model.StockAvailabilityDate = stockInfo.AvailabilityDate.Value.ToShortDateString();
+                model.StockAvailabilityDate = stockInfo.AvailabilityDate.Value.ToDisplayedDate();
             }
         }
 
@@ -882,13 +840,13 @@ namespace Sitecore.Reference.Storefront.Controllers
             if (childProducts != null && childProducts.SearchResultItems.Count > 0)
             {
                 this.CatalogManager.GetProductBulkPrices(categoryViewModel.ChildProducts);
-                this.CatalogManager.GetProductsStockStatus(categoryViewModel.ChildProducts);
+                this.InventoryManager.GetProductsStockStatus(this.CurrentStorefront, categoryViewModel.ChildProducts);
 
                 foreach (var productViewModel in categoryViewModel.ChildProducts)
                 {
                     Item productItem = childProducts.SearchResultItems.Where(item => item.Name == productViewModel.ProductId).Single();
                     productViewModel.CustomerAverageRating = this.CatalogManager.GetProductRating(productItem);
-                }
+                } 
             }
 
             if (!noCache)
@@ -1118,7 +1076,7 @@ namespace Sitecore.Reference.Storefront.Controllers
                 }
 
                 return giftCardAmountOptions.ToList();
-            }
+            }           
 
             return null;
         }

@@ -19,10 +19,10 @@
     var totalSavingsLabel = Html.Sitecore().Field("Total Savings Label", Html.Sitecore().CurrentItem);
 }
 
-<div class="row" data-binding="visible: total > 0" id="summarySection">
-    @*<div class="col-md-12">
+<div data-binding="visible: total > 0" id="summarySection">
+    <div class="col-md-12">
         <h3>@orderTotalHeaderLabel</h3>
-    </div>*@
+    </div>
     <div class="col-md-12 summary">
         <span class="text">@paymentTotalLabel</span>
         <span class="amount" data-bind="text: subTotal" pid="subtotal"></span>

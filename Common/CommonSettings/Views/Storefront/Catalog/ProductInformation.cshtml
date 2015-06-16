@@ -56,7 +56,7 @@
     else
     {
         <div class="col-md-12 col-xs-12">
-            <h3 class="price-now" id="price">@Html.DisplayFor(model => Model.AdjustedPriceWithCurrency)</h3>
+            <h3 class="price-now" id="price">@Html.DisplayFor(model => Model.ListPriceWithCurrency)</h3>
         </div>
     }
 
@@ -86,12 +86,6 @@
                 </a>
             }
         </div>
-    </div>
-    <div class="col-md-12 col-xs-12">
-        @foreach (var discount in Model.Discounts)
-        {
-            <div class="alert alert-warning" role="alert">@discount</div>
-        }
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12">
         @if (Model.Variants != null && Model.Variants.Count > 0)

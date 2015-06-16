@@ -109,10 +109,5 @@ namespace Sitecore.Reference.Storefront.Models
         /// Gets or sets the current page number
         /// </summary>
         public int CurrentPageNumber { get; set; }
-
-        /// <summary>
-        /// Gets whether to display a product control for implicit personalization
-        /// </summary>
-        public bool Implicit { get; set; }
     }
 }

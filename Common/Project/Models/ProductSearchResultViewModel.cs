@@ -61,7 +61,6 @@ namespace Sitecore.Reference.Storefront.Models
             }
 
             this.DisplayName = searchResult.DisplayName;
-            this.Implicit = searchResult.Implicit;
             this.Products = new List<ProductViewModel>();
             foreach (var child in searchResult.SearchResultItems)
             {
@@ -70,10 +69,5 @@ namespace Sitecore.Reference.Storefront.Models
                 this.Products.Add(productModel);
             }
         }
-
-        /// <summary>
-        /// Gets whether to display a product control for implicit personalization
-        /// </summary>
-        public bool Implicit { get; set; }
     }
 }

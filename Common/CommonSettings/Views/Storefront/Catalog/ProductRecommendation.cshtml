@@ -50,18 +50,10 @@
         {
             var searchResultsModel = Model.ProductSearchResults.ElementAt(i);
 
-            if (searchResultsModel.Implicit)
-            {
-                <div class="carousel slide product-slider" id="carousel-@Model.ProductSearchResults.ElementAt(i).DisplayName.Replace(' ', '-').ToLowerInvariant()" data-ride="carousel" data-interval="false" @(i != 0 ? "style=display:none;" : "")>
-                    @Html.Partial("~/Views/Storefront/Catalog/_FourProductSlideImplicit.cshtml")
-                </div>
-            }
-            else
-            {
-                <div class="carousel slide product-slider" id="carousel-@Model.ProductSearchResults.ElementAt(i).DisplayName.Replace(' ', '-').ToLowerInvariant()" data-ride="carousel" data-interval="false" @(i != 0 ? "style=display:none;" : "")>
-                    @Html.Partial("~/Views/Storefront/Catalog/_FourProductSlide.cshtml", searchResultsModel)
-                </div>
-            }
+            <div class="carousel slide product-slider" id="carousel-@Model.ProductSearchResults.ElementAt(i).DisplayName.Replace(' ', '-').ToLowerInvariant()" data-ride="carousel" data-interval="false" @(i != 0 ? "style=display:none;" : "")>
+                @Html.Partial("~/Views/Storefront/Catalog/_FourProductSlide.cshtml", searchResultsModel)
+
+            </div>
         }
 
     </div>

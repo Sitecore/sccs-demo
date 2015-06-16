@@ -152,7 +152,7 @@ namespace Sitecore.Reference.Storefront.Managers
             if (!result.Success || result.CommerceUser == null)
             {
                 var message = StorefrontManager.GetSystemMessage("UserNotFoundError");
-                result.SystemMessages.Add(new SystemMessage { Message = string.IsNullOrEmpty(message) ? Translate.Text(Sitecore.Reference.Storefront.Texts.UserNotFoundError) : message });
+                result.SystemMessages.Add(new SystemMessage { Message = message });
             }
 
             Helpers.LogSystemMessages(result.SystemMessages, result);
@@ -213,7 +213,6 @@ namespace Sitecore.Reference.Storefront.Managers
                 commerceUser.LastName = inputModel.LastName;
                 commerceUser.Email = inputModel.Email;
                 commerceUser.SetPropertyValue("Phone", inputModel.TelephoneNumber);
-                this.CurrentSiteContext.CurrentContext.Profile.SetPropertyValue("user_preference", inputModel.UserPreference);
 
                 try
                 {
@@ -229,9 +228,10 @@ namespace Sitecore.Reference.Storefront.Managers
             else
             {
                 // user is authenticated, but not in the CommerceUsers domain - probably here because we are in edit or preview mode
-                var msg = string.Format(CultureInfo.InvariantCulture, "Cannot update profile details for user {0}.", Context.User.LocalName);
+                var message = StorefrontManager.GetSystemMessage("UpdateUserProfileError");
+                message = string.Format(CultureInfo.InvariantCulture, message, Context.User.LocalName);
                 result = new UpdateUserResult { Success = false };
-                result.SystemMessages.Add(new Commerce.Services.SystemMessage { Message = msg });
+                result.SystemMessages.Add(new Commerce.Services.SystemMessage { Message = message });
             }
 
             Helpers.LogSystemMessages(result.SystemMessages, result);
@@ -294,8 +294,11 @@ namespace Sitecore.Reference.Storefront.Managers
 
             var request = new RemovePartiesRequest(user, parties.Cast<Party>().ToList());
             var result = this.CustomerServiceProvider.RemoveParties(request);
+            if (!result.Success)
+            {
+                Helpers.LogSystemMessages(result.SystemMessages, result);
+            }
 
-            Helpers.LogSystemMessages(result.SystemMessages, result);
             return new ManagerResponse<CustomerResult, bool>(result, result.Success);
         }
 
@@ -343,8 +346,11 @@ namespace Sitecore.Reference.Storefront.Managers
 
             var request = new UpdatePartiesRequest(user, parties);
             var result = this.CustomerServiceProvider.UpdateParties(request);
+            if (!result.Success)
+            {
+                Helpers.LogSystemMessages(result.SystemMessages, result);
+            }
 
-            Helpers.LogSystemMessages(result.SystemMessages, result);
             return new ManagerResponse<CustomerResult, bool>(result, result.Success);
         }
 
@@ -363,8 +369,11 @@ namespace Sitecore.Reference.Storefront.Managers
 
             var request = new AddPartiesRequest(user, parties);
             var result = this.CustomerServiceProvider.AddParties(request);
+            if (!result.Success)
+            {
+                Helpers.LogSystemMessages(result.SystemMessages, result);
+            }
 
-            Helpers.LogSystemMessages(result.SystemMessages, result);
             return new ManagerResponse<AddPartiesResult, bool>(result, result.Success);
         }
 
@@ -433,10 +442,14 @@ namespace Sitecore.Reference.Storefront.Managers
             if (!result.Success && !result.SystemMessages.Any())
             {
                 var message = StorefrontManager.GetSystemMessage("PasswordCouldNotBeReset");
-                result.SystemMessages.Add(new SystemMessage { Message = string.IsNullOrEmpty(message) ? Translate.Text(Sitecore.Reference.Storefront.Texts.PasswordCouldNotBeReset) : message });
+                result.SystemMessages.Add(new SystemMessage { Message = message });
             }
 
-            Helpers.LogSystemMessages(result.SystemMessages, result);
+            if (!result.Success)
+            {
+                Helpers.LogSystemMessages(result.SystemMessages, result);
+            }
+
             return new ManagerResponse<UpdatePasswordResult, bool>(result, result.Success);
         }
 
@@ -476,7 +489,7 @@ namespace Sitecore.Reference.Storefront.Managers
                     {
                         var message = StorefrontManager.GetSystemMessage("CouldNotSentEmailError");
                         result.Success = false;
-                        result.SystemMessages.Add(new SystemMessage { Message = string.IsNullOrEmpty(message) ? Translate.Text(Sitecore.Reference.Storefront.Texts.CouldNotSentEmailError) : message });
+                        result.SystemMessages.Add(new SystemMessage { Message = message });
                     }
                 }
                 catch (Exception e)
@@ -485,7 +498,10 @@ namespace Sitecore.Reference.Storefront.Managers
                     result.SystemMessages.Add(new SystemMessage { Message = e.Message });
                 }
 
-                Helpers.LogSystemMessages(result.SystemMessages, result);
+                if (!result.Success)
+                {
+                    Helpers.LogSystemMessages(result.SystemMessages, result);
+                }
             }
             
             return new ManagerResponse<UpdatePasswordResult, bool>(result, result.Success);
@@ -585,38 +601,37 @@ namespace Sitecore.Reference.Storefront.Managers
         {
             // See http://go.microsoft.com/fwlink/?LinkID=177550 for
             // a full list of status codes.
-            // TODO: Hard code strings, please remove and apply localized values!
             switch (createStatus)
             {
                 case MembershipCreateStatus.DuplicateUserName:
-                    return "User name already exists. Please enter a different user name.";
+                    return StorefrontManager.GetSystemMessage("UserAlreadyExists");
 
                 case MembershipCreateStatus.DuplicateEmail:
-                    return "A user name for that e-mail address already exists. Please enter a different e-mail address.";
+                    return StorefrontManager.GetSystemMessage("UserNameForEmailExists");
 
                 case MembershipCreateStatus.InvalidPassword:
-                    return "The password provided is invalid. Please enter a valid password value.";
+                    return StorefrontManager.GetSystemMessage("InvalidPasswordError");
 
                 case MembershipCreateStatus.InvalidEmail:
-                    return "The e-mail address provided is invalid. Please check the value and try again.";
+                    return StorefrontManager.GetSystemMessage("InvalidEmailError");
 
                 case MembershipCreateStatus.InvalidAnswer:
-                    return "The password retrieval answer provided is invalid. Please check the value and try again.";
+                    return StorefrontManager.GetSystemMessage("PasswordRetrievalAnswerInvalid");
 
                 case MembershipCreateStatus.InvalidQuestion:
-                    return "The password retrieval question provided is invalid. Please check the value and try again.";
+                    return StorefrontManager.GetSystemMessage("PasswordRetrievalQuestionInvalid");
 
                 case MembershipCreateStatus.InvalidUserName:
-                    return "The user name provided is invalid. Please check the value and try again.";
+                    return StorefrontManager.GetSystemMessage("UserNameInvalid");
 
                 case MembershipCreateStatus.ProviderError:
-                    return "The authentication provider returned an error. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return StorefrontManager.GetSystemMessage("AuthenticationProviderError");
 
                 case MembershipCreateStatus.UserRejected:
-                    return "The user creation request has been canceled. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return StorefrontManager.GetSystemMessage("UserRejectedError");
 
                 default:
-                    return "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
+                    return StorefrontManager.GetSystemMessage("UnknownMembershipProviderError");
             }
         }
 
