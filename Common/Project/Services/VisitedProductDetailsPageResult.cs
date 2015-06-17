@@ -24,7 +24,7 @@ namespace Sitecore.Reference.Storefront.Services
     /// <summary>
     /// The result returned by a request to VisitedProductDetailsPage service pipeline.
     /// </summary>
-    public class VisitedProductDetailsPageResult : CatalogResult
+    public class VisitedProductDetailsPageResult : ServiceProviderResult
     {
     }
 }

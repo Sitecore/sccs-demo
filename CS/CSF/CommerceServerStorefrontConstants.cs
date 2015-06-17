@@ -114,11 +114,6 @@ namespace Sitecore.Reference.Storefront
             /// The supports girst card payment field.
             /// </summary>
             public const string SupportsGirstCardPayment = "Supports Girft Card Payment";
-
-            /// <summary>
-            /// The value field.
-            /// </summary>
-            public const string Value = "Value";
         }
 
         /// <summary>

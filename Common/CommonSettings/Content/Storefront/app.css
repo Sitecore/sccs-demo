@@ -10,3 +10,156 @@
 // and limitations under the License.
 // ------------------------------------------------------------------------------------------- */
 
+
+/******************************  PRODUCT NAVIGATION OVERRIDES ******************************/
+
+.product-slide {
+    padding-bottom: 5px;
+}
+
+.nav-tabs {
+    border: 0px;
+}
+
+.nav-tabs > li > a {
+    border: 0px !important;
+    border-radius: 0px;
+    color: #555;
+}
+
+.nav-tabs > li > a {
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: lightgray;
+    color: #ffffff;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #428BCA;
+    border: 0px !important;
+}
+
+.nav-tabs.nav-justified > li > a {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: lightgray;
+    color: #000;
+}
+
+.navbar-nav > li:hover, .navbar-nav > li a:hover {
+    background-color: lightgray;
+    color: #fff !important;
+}
+
+/******************************  PRODUCT CAROUSEL OVERRIDES ******************************/
+
+.col-item:hover {
+    border: 3px solid #ffffff;
+}
+
+/******************************  TOP NAVIGATION OVERRIDES *****************************/
+/****** TODO: Modify this to suit our ACME design a little better ************/
+
+.wrap-topbar {
+    background-color: #428BCA;
+    padding: 0px;
+}
+
+.quicklinks ul li a{
+    color: #fff;
+}
+
+.quicklinks ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.quicklink-language {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+/******************************  MINI-CART OVERRIDES *****************************/
+
+.minicart {
+    width: 100%;
+    z-index: 9999 !important;
+    padding: 6px;
+    text-align: left;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 10px;
+    border: dotted 1px lightgrey;
+}
+
+.minicart-total{
+    color: #000;
+}
+
+/******************************  SEARCH BAR OVERRIDES *****************************/
+
+.search-bar {
+    min-height: 40px;
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+/******************************  PRODUCT PAGE OVERRIDES *****************************/
+
+.prod-info .description {
+    margin-top: 10px;
+    border-top: 0px;
+}
+
+.prod-info .features {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0px;
+}
+
+.prod-info .price-before {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0px;
+}
+
+.prod-variants-close {
+    border-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+/****************************** CART OVERRIDES *****************************/
+
+.row .cart h1 {
+  font-size: 36px;
+}
+
+.delete {
+    float: right;
+    margin-left: 0px;
+    text-align: right;
+}
+
+.delete a {
+    color: #D9534F;
+}
+
+.delete a:hover {
+    text-decoration: none;
+    color: #a7312d;
+}
+
+.delete span {
+    vertical-align: 0px;
+}

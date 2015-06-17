@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        @Html.LabelFor(m => m.UserName, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.Email, Html.Sitecore().CurrentItem))<span class="required">*</span>
+                        @Html.LabelFor(m => m.UserName, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.Email, Html.Sitecore().CurrentItem))
 
                         @Html.TextBoxFor(m => m.UserName, 
                         new 
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                        @Html.LabelFor(m => m.Password, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.Password, Html.Sitecore().CurrentItem))<span class="required">*</span>
+                        @Html.LabelFor(m => m.Password, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.Password, Html.Sitecore().CurrentItem))
                         @Html.PasswordFor(m => m.Password, 
                         new 
                         {
@@ -54,8 +54,7 @@
                             data_val_length_min = "6",
                             data_val_length_max = "100",
                             data_val_length = string.Format(Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.PasswordLengthMessage, Html.Sitecore().CurrentItem).ToString(), 6),
-                            @class = "form-control",
-                            autocomplete = "off"
+                            @class = "form-control" 
                         })
 
                         @Html.ValidationMessageFor(m => m.Password)
@@ -63,7 +62,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="form-group">
-                        @Html.LabelFor(m => m.ConfirmPassword, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.PasswordAgain, Html.Sitecore().CurrentItem))<span class="required">*</span>
+                        @Html.LabelFor(m => m.ConfirmPassword, Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.PasswordAgain, Html.Sitecore().CurrentItem))
                         @Html.PasswordFor(m => m.ConfirmPassword, 
                         new 
                         {
@@ -71,8 +70,7 @@
                             data_val_required = Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.PasswordMissingMessage, Html.Sitecore().CurrentItem),
                             data_val_equalto_other = "*.Password",
                             data_val_equalto = Html.Sitecore().Field(StorefrontConstants.KnownFieldNames.PasswordsDoNotMatchMessage, Html.Sitecore().CurrentItem),
-                            @class = "form-control",
-                            autocomplete = "off"
+                            @class = "form-control" 
                         })
 
                         @Html.ValidationMessageFor(m => m.ConfirmPassword)
@@ -89,7 +87,7 @@
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-12 spot-single-image">
-                        @Html.Sitecore().Field("Image", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "class", "img-responsive" } } })
+                    <img src="http://placehold.it/750x430" class="img-responsive" alt="a" />
                 </div>
             </div>
         </div>

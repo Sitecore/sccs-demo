@@ -1120,8 +1120,8 @@ end sub
     <tns:ContactEmail />
     <tns:DefaultUrl />
     <tns:Type>Self</tns:Type>
-    <tns:CreatedDate>2015-04-06T06:58:24.487-04:00</tns:CreatedDate>
-    <tns:LastModifiedDate>2015-04-06T06:58:24.487-04:00</tns:LastModifiedDate>
+    <tns:CreatedDate>2015-03-26T16:46:39.2-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-03-26T16:46:39.2-04:00</tns:LastModifiedDate>
     <tns:LastModifiedBy>anonymous</tns:LastModifiedBy>
     <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
   </tns:Customer>
@@ -1137,8 +1137,8 @@ end sub
     <tns:CampaignLevelGoaling>true</tns:CampaignLevelGoaling>
     <tns:NumberOfEventsOrdered>0</tns:NumberOfEventsOrdered>
     <tns:CustomerName>Default Customer</tns:CustomerName>
-    <tns:CreatedDate>2015-04-06T06:58:24.527-04:00</tns:CreatedDate>
-    <tns:LastModifiedDate>2015-04-06T06:58:24.527-04:00</tns:LastModifiedDate>
+    <tns:CreatedDate>2015-03-26T16:46:39.213-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-03-26T16:46:39.213-04:00</tns:LastModifiedDate>
     <tns:LastModifiedBy>anonymous</tns:LastModifiedBy>
     <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
   </tns:Campaign>
@@ -1160,36 +1160,36 @@ end sub
   </tns:ExpressionCategory>
   <tns:PromoCodeDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <tns:Id>1</tns:Id>
-    <tns:Name>Rtrn15</tns:Name>
+    <tns:Name>Free Shipping</tns:Name>
     <tns:NumberOfCodes>1</tns:NumberOfCodes>
-    <tns:PublicPromoCode>Rtrn15</tns:PublicPromoCode>
+    <tns:PublicPromoCode>FREESHIPPING</tns:PublicPromoCode>
     <tns:UsageLimit>0</tns:UsageLimit>
     <tns:UsageOption>Public</tns:UsageOption>
     <tns:CodeGenerationStatus>Queued</tns:CodeGenerationStatus>
     <tns:CodeGenerationError />
-    <tns:CreatedDate>2015-04-06T06:58:24.567-04:00</tns:CreatedDate>
-    <tns:LastModifiedDate>2015-04-07T01:38:59.343-04:00</tns:LastModifiedDate>
-    <tns:LastModifiedBy>DK\mbe</tns:LastModifiedBy>
+    <tns:CreatedDate>2015-04-14T17:27:46.3-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-14T17:29:18.33-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
   </tns:PromoCodeDefinition>
   <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <tns:Id>1</tns:Id>
     <tns:CampaignId>1</tns:CampaignId>
     <tns:CampaignName>Default Campaign</tns:CampaignName>
     <tns:ItemType>Discount</tns:ItemType>
-    <tns:Name>Rtrn15</tns:Name>
+    <tns:Name>25% off all Backpacks</tns:Name>
     <tns:Description />
-    <tns:Active>true</tns:Active>
+    <tns:Active>false</tns:Active>
     <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
-    <tns:EndDate>2017-08-01T18:59:59-04:00</tns:EndDate>
-    <tns:CreatedDate>2015-04-06T06:58:24.8-04:00</tns:CreatedDate>
-    <tns:LastModifiedDate>2015-04-07T01:39:01.063-04:00</tns:LastModifiedDate>
-    <tns:LastModifiedBy>DK\mbe</tns:LastModifiedBy>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-14T17:24:19.017-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-30T12:18:19.503-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
     <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
     <tns:CreativeId>1</tns:CreativeId>
     <tns:ExposureLimit>1</tns:ExposureLimit>
     <tns:SizeName>Full Banner</tns:SizeName>
     <tns:TemplateName>No Display</tns:TemplateName>
-    <tns:DateReceived>2015-03-04T08:04:22.563-05:00</tns:DateReceived>
+    <tns:DateReceived>2015-04-14T17:24:18.66-04:00</tns:DateReceived>
     <tns:PropertyValues />
     <tns:PageGroups />
     <tns:Targets />
@@ -1197,7 +1197,7 @@ end sub
     <tns:MultilingualBasketDisplay>
       <tns:anyType xsi:type="tns:LanguageStringData">
         <tns:CultureCode>en-US</tns:CultureCode>
-        <tns:Value>Returning Customer</tns:Value>
+        <tns:Value>25% off</tns:Value>
       </tns:anyType>
     </tns:MultilingualBasketDisplay>
     <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
@@ -1205,13 +1205,430 @@ end sub
     <tns:Priority>1</tns:Priority>
     <tns:PerOrderLimit>0</tns:PerOrderLimit>
     <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:AwardExpression xsi:type="tns:LocalExpressionData">
+      <tns:Expression>
+        <tns:Id>1006</tns:Id>
+        <tns:Name>EXPR_Adventure Works Catalog_Backpacks_ab51e5a65b9d433fa36df9335a178b18</tns:Name>
+        <tns:Description>Backpacks</tns:Description>
+        <tns:Category>CatalogCondition</tns:Category>
+        <tns:Local>true</tns:Local>
+        <expr:Body>
+          <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+            </CLAUSE>
+            <CLAUSE OPER="contains">
+              <PROPERTY ID="Product._product_categories" MULTIVAL="true" TYPE="string" />
+              <IMMED-VAL TYPE="string">Backpacks</IMMED-VAL>
+            </CLAUSE>
+          </TERM>
+        </expr:Body>
+        <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+        <tns:ProductPickerCategory>Backpacks</tns:ProductPickerCategory>
+        <tns:ProductPickerProduct />
+        <tns:CreatedDate>2015-04-30T12:18:19.503-04:00</tns:CreatedDate>
+        <tns:LastModifiedDate>2015-04-30T12:18:19.503-04:00</tns:LastModifiedDate>
+        <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+      </tns:Expression>
+    </tns:AwardExpression>
     <tns:MaxAwards>0</tns:MaxAwards>
     <tns:OfferType>Percentage</tns:OfferType>
-    <tns:OfferAmount>15.0000</tns:OfferAmount>
+    <tns:OfferAmount>25.0000</tns:OfferAmount>
+    <tns:OfferDisjoint>false</tns:OfferDisjoint>
+    <tns:CustomOrderLevelOfferType />
+    <tns:AutoAddAward>false</tns:AutoAddAward>
+    <tns:PromoCodeDefinitionId>0</tns:PromoCodeDefinitionId>
+    <tns:ReuseConditionsAsConditions>false</tns:ReuseConditionsAsConditions>
+    <tns:ReuseConditionsAsAwards>false</tns:ReuseConditionsAsAwards>
+    <tns:ReuseAwardsAsConditions>false</tns:ReuseAwardsAsConditions>
+    <tns:ReuseAwardsAsAwards>false</tns:ReuseAwardsAsAwards>
+    <tns:Condition>
+      <tns:Basis>Quantity</tns:Basis>
+      <tns:MinAmount>1</tns:MinAmount>
+    </tns:Condition>
+    <tns:EligibilityRequirements />
+  </tns:Discount>
+  <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tns:Id>2</tns:Id>
+    <tns:CampaignId>0</tns:CampaignId>
+    <tns:CampaignName />
+    <tns:ItemType>Discount</tns:ItemType>
+    <tns:Name>Buy 2 Rockshoes get $20</tns:Name>
+    <tns:Description />
+    <tns:Active>false</tns:Active>
+    <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-14T17:26:18.97-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-15T14:46:35.097-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+    <tns:DeletedDate>2015-04-15T14:46:35.097-04:00</tns:DeletedDate>
+    <tns:CreativeId>2</tns:CreativeId>
+    <tns:ExposureLimit>1</tns:ExposureLimit>
+    <tns:SizeName>Full Banner</tns:SizeName>
+    <tns:TemplateName>No Display</tns:TemplateName>
+    <tns:DateReceived>2015-04-14T17:26:18.97-04:00</tns:DateReceived>
+    <tns:PropertyValues />
+    <tns:PageGroups />
+    <tns:Targets />
+    <tns:DiscountType>OrderSubtotal</tns:DiscountType>
+    <tns:MultilingualBasketDisplay>
+      <tns:anyType xsi:type="tns:LanguageStringData">
+        <tns:CultureCode>en-US</tns:CultureCode>
+        <tns:Value>Get $20 off your order</tns:Value>
+      </tns:anyType>
+    </tns:MultilingualBasketDisplay>
+    <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
+    <tns:WizardType>1</tns:WizardType>
+    <tns:Priority>2</tns:Priority>
+    <tns:PerOrderLimit>1</tns:PerOrderLimit>
+    <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:MaxAwards>1</tns:MaxAwards>
+    <tns:OfferType>Currency</tns:OfferType>
+    <tns:OfferAmount>20.0000</tns:OfferAmount>
+    <tns:OfferDisjoint>false</tns:OfferDisjoint>
+    <tns:CustomOrderLevelOfferType />
+    <tns:AutoAddAward>false</tns:AutoAddAward>
+    <tns:PromoCodeDefinitionId>0</tns:PromoCodeDefinitionId>
+    <tns:ReuseConditionsAsConditions>true</tns:ReuseConditionsAsConditions>
+    <tns:ReuseConditionsAsAwards>true</tns:ReuseConditionsAsAwards>
+    <tns:ReuseAwardsAsConditions>true</tns:ReuseAwardsAsConditions>
+    <tns:ReuseAwardsAsAwards>true</tns:ReuseAwardsAsAwards>
+    <tns:Condition>
+      <tns:Basis>Quantity</tns:Basis>
+      <tns:MinAmount>2</tns:MinAmount>
+      <tns:ConditionExpression xsi:type="tns:LocalExpressionData">
+        <tns:Expression>
+          <tns:Id>15</tns:Id>
+          <tns:Name>EXPR_Adventure Works Catalog_Rockshoes_9516604844ba483a95d35915ad6b8362</tns:Name>
+          <tns:Description>Rockshoes</tns:Description>
+          <tns:Category>CatalogCondition</tns:Category>
+          <tns:Local>true</tns:Local>
+          <expr:Body>
+            <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+              <CLAUSE OPER="equal">
+                <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+                <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+              </CLAUSE>
+              <CLAUSE OPER="contains">
+                <PROPERTY ID="Product._product_categories" MULTIVAL="true" TYPE="string" />
+                <IMMED-VAL TYPE="string">Rockshoes</IMMED-VAL>
+              </CLAUSE>
+            </TERM>
+          </expr:Body>
+          <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+          <tns:ProductPickerCategory>Rockshoes</tns:ProductPickerCategory>
+          <tns:ProductPickerProduct />
+          <tns:CreatedDate>2015-04-15T14:45:34.82-04:00</tns:CreatedDate>
+          <tns:LastModifiedDate>2015-04-15T14:45:34.82-04:00</tns:LastModifiedDate>
+          <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+        </tns:Expression>
+      </tns:ConditionExpression>
+    </tns:Condition>
+    <tns:EligibilityRequirements />
+  </tns:Discount>
+  <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tns:Id>3</tns:Id>
+    <tns:CampaignId>1</tns:CampaignId>
+    <tns:CampaignName>Default Campaign</tns:CampaignName>
+    <tns:ItemType>Discount</tns:ItemType>
+    <tns:Name>Free Shipping with Promo Code</tns:Name>
+    <tns:Description />
+    <tns:Active>true</tns:Active>
+    <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-14T17:27:12.42-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-30T17:15:30.26-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+    <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
+    <tns:CreativeId>3</tns:CreativeId>
+    <tns:ExposureLimit>1</tns:ExposureLimit>
+    <tns:SizeName>Full Banner</tns:SizeName>
+    <tns:TemplateName>No Display</tns:TemplateName>
+    <tns:DateReceived>2015-04-14T17:27:12.42-04:00</tns:DateReceived>
+    <tns:PropertyValues />
+    <tns:PageGroups />
+    <tns:Targets />
+    <tns:DiscountType>Shipping</tns:DiscountType>
+    <tns:MultilingualBasketDisplay>
+      <tns:anyType xsi:type="tns:LanguageStringData">
+        <tns:CultureCode>en-US</tns:CultureCode>
+        <tns:Value>Free Shipping</tns:Value>
+      </tns:anyType>
+    </tns:MultilingualBasketDisplay>
+    <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
+    <tns:WizardType>0</tns:WizardType>
+    <tns:Priority>3</tns:Priority>
+    <tns:PerOrderLimit>1</tns:PerOrderLimit>
+    <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:MaxAwards>1</tns:MaxAwards>
+    <tns:OfferType>Percentage</tns:OfferType>
+    <tns:OfferAmount>100.0000</tns:OfferAmount>
     <tns:OfferDisjoint>false</tns:OfferDisjoint>
     <tns:CustomOrderLevelOfferType />
     <tns:AutoAddAward>false</tns:AutoAddAward>
     <tns:PromoCodeDefinitionId>1</tns:PromoCodeDefinitionId>
+    <tns:ReuseConditionsAsConditions>false</tns:ReuseConditionsAsConditions>
+    <tns:ReuseConditionsAsAwards>true</tns:ReuseConditionsAsAwards>
+    <tns:ReuseAwardsAsConditions>false</tns:ReuseAwardsAsConditions>
+    <tns:ReuseAwardsAsAwards>false</tns:ReuseAwardsAsAwards>
+    <tns:Condition>
+      <tns:Basis>Quantity</tns:Basis>
+      <tns:MinAmount>1</tns:MinAmount>
+    </tns:Condition>
+    <tns:EligibilityRequirements />
+  </tns:Discount>
+  <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tns:Id>4</tns:Id>
+    <tns:CampaignId>1</tns:CampaignId>
+    <tns:CampaignName>Default Campaign</tns:CampaignName>
+    <tns:ItemType>Discount</tns:ItemType>
+    <tns:Name>Buy 1 Rockshoes and Get Shirt 50% off</tns:Name>
+    <tns:Description />
+    <tns:Active>true</tns:Active>
+    <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-15T14:49:11.097-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-30T16:12:47.107-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+    <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
+    <tns:CreativeId>4</tns:CreativeId>
+    <tns:ExposureLimit>1</tns:ExposureLimit>
+    <tns:SizeName>Full Banner</tns:SizeName>
+    <tns:TemplateName>No Display</tns:TemplateName>
+    <tns:DateReceived>2015-04-15T14:49:11.08-04:00</tns:DateReceived>
+    <tns:PropertyValues />
+    <tns:PageGroups />
+    <tns:Targets />
+    <tns:DiscountType>LineItem</tns:DiscountType>
+    <tns:MultilingualBasketDisplay>
+      <tns:anyType xsi:type="tns:LanguageStringData">
+        <tns:CultureCode>en-US</tns:CultureCode>
+        <tns:Value>Buy 1 Get Shirt 50% Off</tns:Value>
+      </tns:anyType>
+    </tns:MultilingualBasketDisplay>
+    <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
+    <tns:WizardType>3</tns:WizardType>
+    <tns:Priority>4</tns:Priority>
+    <tns:PerOrderLimit>0</tns:PerOrderLimit>
+    <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:AwardExpression xsi:type="tns:LocalExpressionData">
+      <tns:Expression>
+        <tns:Id>18</tns:Id>
+        <tns:Name>EXPR_Adventure Works Catalog_Shirts_138f59196aaa4bb09822b3299d0db2c9</tns:Name>
+        <tns:Description>Shirts</tns:Description>
+        <tns:Category>CatalogCondition</tns:Category>
+        <tns:Local>true</tns:Local>
+        <expr:Body>
+          <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+            </CLAUSE>
+            <CLAUSE OPER="contains">
+              <PROPERTY ID="Product._product_categories" MULTIVAL="true" TYPE="string" />
+              <IMMED-VAL TYPE="string">Shirts</IMMED-VAL>
+            </CLAUSE>
+          </TERM>
+        </expr:Body>
+        <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+        <tns:ProductPickerCategory>Shirts</tns:ProductPickerCategory>
+        <tns:ProductPickerProduct />
+        <tns:CreatedDate>2015-04-15T14:49:35.883-04:00</tns:CreatedDate>
+        <tns:LastModifiedDate>2015-04-15T14:49:35.883-04:00</tns:LastModifiedDate>
+        <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+      </tns:Expression>
+    </tns:AwardExpression>
+    <tns:MaxAwards>1</tns:MaxAwards>
+    <tns:OfferType>Percentage</tns:OfferType>
+    <tns:OfferAmount>50.0000</tns:OfferAmount>
+    <tns:OfferDisjoint>true</tns:OfferDisjoint>
+    <tns:CustomOrderLevelOfferType />
+    <tns:AutoAddAward>false</tns:AutoAddAward>
+    <tns:PromoCodeDefinitionId>0</tns:PromoCodeDefinitionId>
+    <tns:ReuseConditionsAsConditions>false</tns:ReuseConditionsAsConditions>
+    <tns:ReuseConditionsAsAwards>false</tns:ReuseConditionsAsAwards>
+    <tns:ReuseAwardsAsConditions>false</tns:ReuseAwardsAsConditions>
+    <tns:ReuseAwardsAsAwards>false</tns:ReuseAwardsAsAwards>
+    <tns:Condition>
+      <tns:Basis>Quantity</tns:Basis>
+      <tns:MinAmount>1</tns:MinAmount>
+      <tns:ConditionExpression xsi:type="tns:LocalExpressionData">
+        <tns:Expression>
+          <tns:Id>19</tns:Id>
+          <tns:Name>EXPR_Adventure Works Catalog_Rockshoes_b72383b4877545a4b1884d02ad6db0a1</tns:Name>
+          <tns:Description>Rockshoes</tns:Description>
+          <tns:Category>CatalogCondition</tns:Category>
+          <tns:Local>true</tns:Local>
+          <expr:Body>
+            <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+              <CLAUSE OPER="equal">
+                <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+                <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+              </CLAUSE>
+              <CLAUSE OPER="contains">
+                <PROPERTY ID="Product._product_categories" MULTIVAL="true" TYPE="string" />
+                <IMMED-VAL TYPE="string">Rockshoes</IMMED-VAL>
+              </CLAUSE>
+            </TERM>
+          </expr:Body>
+          <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+          <tns:ProductPickerCategory>Rockshoes</tns:ProductPickerCategory>
+          <tns:ProductPickerProduct />
+          <tns:CreatedDate>2015-04-15T14:49:35.887-04:00</tns:CreatedDate>
+          <tns:LastModifiedDate>2015-04-15T14:49:35.887-04:00</tns:LastModifiedDate>
+          <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+        </tns:Expression>
+      </tns:ConditionExpression>
+    </tns:Condition>
+    <tns:EligibilityRequirements />
+  </tns:Discount>
+  <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tns:Id>1004</tns:Id>
+    <tns:CampaignId>0</tns:CampaignId>
+    <tns:CampaignName />
+    <tns:ItemType>Discount</tns:ItemType>
+    <tns:Name>Copy of 25% off Backpacks</tns:Name>
+    <tns:Description />
+    <tns:Active>false</tns:Active>
+    <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-30T10:49:09.397-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-30T12:14:37.413-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+    <tns:DeletedDate>2015-04-30T12:14:37.413-04:00</tns:DeletedDate>
+    <tns:CreativeId>1004</tns:CreativeId>
+    <tns:ExposureLimit>1</tns:ExposureLimit>
+    <tns:SizeName>Full Banner</tns:SizeName>
+    <tns:TemplateName>No Display</tns:TemplateName>
+    <tns:DateReceived>2015-04-14T17:24:18.66-04:00</tns:DateReceived>
+    <tns:PropertyValues />
+    <tns:PageGroups />
+    <tns:Targets />
+    <tns:DiscountType>LineItem</tns:DiscountType>
+    <tns:MultilingualBasketDisplay>
+      <tns:anyType xsi:type="tns:LanguageStringData">
+        <tns:CultureCode>en-US</tns:CultureCode>
+        <tns:Value>25% off the Day Hike Backpack</tns:Value>
+      </tns:anyType>
+    </tns:MultilingualBasketDisplay>
+    <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
+    <tns:WizardType>0</tns:WizardType>
+    <tns:Priority>5</tns:Priority>
+    <tns:PerOrderLimit>0</tns:PerOrderLimit>
+    <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:AwardExpression xsi:type="tns:LocalExpressionData">
+      <tns:Expression>
+        <tns:Id>1005</tns:Id>
+        <tns:Name>EXPR_Adventure Works Catalog_AW210-12_0016e7eec85a4957b01d579b296b620f</tns:Name>
+        <tns:Description>Day Hike</tns:Description>
+        <tns:Category>CatalogCondition</tns:Category>
+        <tns:Local>true</tns:Local>
+        <expr:Body>
+          <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+            </CLAUSE>
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_ProductID" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">AW210-12</IMMED-VAL>
+            </CLAUSE>
+          </TERM>
+        </expr:Body>
+        <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+        <tns:ProductPickerCategory />
+        <tns:ProductPickerProduct>AW210-12</tns:ProductPickerProduct>
+        <tns:CreatedDate>2015-04-30T10:49:56.093-04:00</tns:CreatedDate>
+        <tns:LastModifiedDate>2015-04-30T10:49:56.093-04:00</tns:LastModifiedDate>
+        <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+      </tns:Expression>
+    </tns:AwardExpression>
+    <tns:MaxAwards>0</tns:MaxAwards>
+    <tns:OfferType>Percentage</tns:OfferType>
+    <tns:OfferAmount>25.0000</tns:OfferAmount>
+    <tns:OfferDisjoint>false</tns:OfferDisjoint>
+    <tns:CustomOrderLevelOfferType />
+    <tns:AutoAddAward>false</tns:AutoAddAward>
+    <tns:PromoCodeDefinitionId>0</tns:PromoCodeDefinitionId>
+    <tns:ReuseConditionsAsConditions>false</tns:ReuseConditionsAsConditions>
+    <tns:ReuseConditionsAsAwards>false</tns:ReuseConditionsAsAwards>
+    <tns:ReuseAwardsAsConditions>false</tns:ReuseAwardsAsConditions>
+    <tns:ReuseAwardsAsAwards>false</tns:ReuseAwardsAsAwards>
+    <tns:Condition>
+      <tns:Basis>Quantity</tns:Basis>
+      <tns:MinAmount>1</tns:MinAmount>
+    </tns:Condition>
+    <tns:EligibilityRequirements />
+  </tns:Discount>
+  <tns:Discount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <tns:Id>1005</tns:Id>
+    <tns:CampaignId>1</tns:CampaignId>
+    <tns:CampaignName>Default Campaign</tns:CampaignName>
+    <tns:ItemType>Discount</tns:ItemType>
+    <tns:Name>50% off Select Backpacks</tns:Name>
+    <tns:Description />
+    <tns:Active>true</tns:Active>
+    <tns:StartDate>1999-12-31T19:00:00-05:00</tns:StartDate>
+    <tns:EndDate>2999-12-31T18:59:59-05:00</tns:EndDate>
+    <tns:CreatedDate>2015-04-30T12:18:28.65-04:00</tns:CreatedDate>
+    <tns:LastModifiedDate>2015-04-30T12:41:52.663-04:00</tns:LastModifiedDate>
+    <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+    <tns:DeletedDate>1899-12-31T19:00:00-05:00</tns:DeletedDate>
+    <tns:CreativeId>1005</tns:CreativeId>
+    <tns:ExposureLimit>0</tns:ExposureLimit>
+    <tns:SizeName>Full Banner</tns:SizeName>
+    <tns:TemplateName>No Display</tns:TemplateName>
+    <tns:DateReceived>2015-04-14T17:24:18.66-04:00</tns:DateReceived>
+    <tns:PropertyValues />
+    <tns:PageGroups />
+    <tns:Targets />
+    <tns:DiscountType>LineItem</tns:DiscountType>
+    <tns:MultilingualBasketDisplay>
+      <tns:anyType xsi:type="tns:LanguageStringData">
+        <tns:CultureCode>en-US</tns:CultureCode>
+        <tns:Value>50% off Select Backpacks</tns:Value>
+      </tns:anyType>
+    </tns:MultilingualBasketDisplay>
+    <tns:UseEligibilityRequirementForTargeting>false</tns:UseEligibilityRequirementForTargeting>
+    <tns:WizardType>0</tns:WizardType>
+    <tns:Priority>6</tns:Priority>
+    <tns:PerOrderLimit>0</tns:PerOrderLimit>
+    <tns:ClickRequired>false</tns:ClickRequired>
+    <tns:AwardExpression xsi:type="tns:LocalExpressionData">
+      <tns:Expression>
+        <tns:Id>1012</tns:Id>
+        <tns:Name>EXPR_Adventure Works Catalog_AW325-13_c1ebadc69370467081474b8385a4a2d9</tns:Name>
+        <tns:Description>Aces</tns:Description>
+        <tns:Category>CatalogCondition</tns:Category>
+        <tns:Local>true</tns:Local>
+        <expr:Body>
+          <TERM TYPE="and" xmlns="http://schemas.commerceserver.net/2013/01/Expressions">
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_CatalogName" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">Adventure Works Catalog</IMMED-VAL>
+            </CLAUSE>
+            <CLAUSE OPER="equal">
+              <PROPERTY ID="Product._product_ProductID" MULTIVAL="false" TYPE="string" />
+              <IMMED-VAL TYPE="string">AW325-13</IMMED-VAL>
+            </CLAUSE>
+          </TERM>
+        </expr:Body>
+        <tns:ProductPickerCatalog>Adventure Works Catalog</tns:ProductPickerCatalog>
+        <tns:ProductPickerCategory />
+        <tns:ProductPickerProduct>AW325-13</tns:ProductPickerProduct>
+        <tns:CreatedDate>2015-04-30T12:41:47.433-04:00</tns:CreatedDate>
+        <tns:LastModifiedDate>2015-04-30T12:41:47.433-04:00</tns:LastModifiedDate>
+        <tns:LastModifiedBy>DK\keh</tns:LastModifiedBy>
+      </tns:Expression>
+    </tns:AwardExpression>
+    <tns:MaxAwards>0</tns:MaxAwards>
+    <tns:OfferType>Percentage</tns:OfferType>
+    <tns:OfferAmount>50.0000</tns:OfferAmount>
+    <tns:OfferDisjoint>false</tns:OfferDisjoint>
+    <tns:CustomOrderLevelOfferType />
+    <tns:AutoAddAward>false</tns:AutoAddAward>
+    <tns:PromoCodeDefinitionId>0</tns:PromoCodeDefinitionId>
     <tns:ReuseConditionsAsConditions>false</tns:ReuseConditionsAsConditions>
     <tns:ReuseConditionsAsAwards>false</tns:ReuseConditionsAsAwards>
     <tns:ReuseAwardsAsConditions>false</tns:ReuseAwardsAsConditions>

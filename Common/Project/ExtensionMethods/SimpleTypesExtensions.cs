@@ -17,9 +17,6 @@
 
 namespace Sitecore.Reference.Storefront.Extensions
 {
-    using System;
-    using System.Globalization;
-
     /// <summary>
     /// Some utility extension methods for simple types
     /// </summary>
@@ -29,46 +26,20 @@ namespace Sitecore.Reference.Storefront.Extensions
         /// Turns a decimal value into a currency string
         /// </summary>
         /// <param name="currency">The decimal object to act on</param>
-        /// <param name="currencyCode">The currency code.</param>
-        /// <returns>
-        /// A decimal formatted as a string
-        /// </returns>
-        public static string ToCurrency(this decimal? currency, string currencyCode)
+        /// <returns>A decimal formatted as a string</returns>
+        public static string ToCurrency(this decimal? currency)
         {
-            if (currency.HasValue)
-            {
-                return currency.Value.ToCurrency(currencyCode);
-            }
-            else
-            {
-                return 0M.ToCurrency(currencyCode);
-            }
+            return string.Format(Context.Language.CultureInfo, "{0:C}", currency.HasValue ? currency : 0);
         }
 
         /// <summary>
         /// Turns a decimal value into a currency string
         /// </summary>
         /// <param name="currency">The decimal object to act on</param>
-        /// <param name="currencyCode">The currency code.</param>
-        /// <returns>
-        /// A decimal formatted as a string
-        /// </returns>
-        public static string ToCurrency(this decimal currency, string currencyCode)
+        /// <returns>A decimal formatted as a string</returns>
+        public static string ToCurrency(this decimal currency)
         {
-            NumberFormatInfo info = (NumberFormatInfo)Context.Language.CultureInfo.NumberFormat.Clone();
-            info.CurrencySymbol = currencyCode;
-            info.CurrencyPositivePattern = 3;
-            return currency.ToString("C", info);
-        }
-
-        /// <summary>
-        /// To the displayed date.
-        /// </summary>
-        /// <param name="date">The date.</param>
-        /// <returns>The formatted date based on the selected culture.</returns>
-        public static string ToDisplayedDate(this DateTime date)
-        {
-            return date.ToString("d", Context.Language.CultureInfo);
+            return string.Format(Context.Language.CultureInfo, "{0:C}", currency);
         }
     }
 }

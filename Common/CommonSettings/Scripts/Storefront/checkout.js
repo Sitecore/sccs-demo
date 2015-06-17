@@ -160,10 +160,6 @@ function getCheckoutData() {
             checkoutDataViewModel = new CheckoutDataViewModel(data);
             ko.applyBindingsWithValidation(checkoutDataViewModel, document.getElementById("checkoutSection"));
             $('#orderShippingPreference').removeAttr('disabled');
-
-            if (checkoutDataViewModel.cartLoyaltyCardNumber && checkoutDataViewModel.cartLoyaltyCardNumber.length > 0) {
-                $('#loyaltyCard-success').show();
-            }
         }
 
         ShowGlobalMessages(data);

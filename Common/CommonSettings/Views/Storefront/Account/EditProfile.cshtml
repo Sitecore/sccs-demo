@@ -23,6 +23,7 @@
     var savingChanges = Html.Sitecore().Field("Saving Changes Button", currentPage);
     var cancel = Html.Sitecore().Field("Cancel Button", currentPage);
     var backtoMyAccount = Html.Sitecore().Field("Back To My Account", currentPage);
+    var userPreference = Html.Sitecore().Field("User Preference", currentPage);
 
     var telephoneNumberPH = Html.Sitecore().Field("Telephone Number Placeholder", currentPage);   
     var emailPH = Html.Sitecore().Field("Email Placeholder", currentPage);
@@ -72,6 +73,10 @@
 
                         @Html.ValidationMessageFor(m => m.LastName)
                     </div>
+                    <div class="form-group">
+                        <label for="Interests">@userPreference</label>
+                        @Html.DropDownListFor(m => m.UserPreference, new SelectList(Model.AvailableInterests, "Key", "Value"), new { @class = "form-control" })
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
@@ -99,7 +104,6 @@
                         @Html.ValidationMessageFor(m => m.EmailRepeat)
                     </div>
                 </div>              
-
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="TelephoneNumber">Telephone number <span class="required">*</span> </label>

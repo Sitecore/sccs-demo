@@ -10,7 +10,7 @@
 // and limitations under the License.
 // ------------------------------------------------------------------------------------------- */
 
-@import url("/Content/Storefront/font-awesome.min.css");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
 
 /****************************** BASE ******************************/
 
@@ -391,7 +391,7 @@ p {
 
 .col-item .photo img {
     margin: 0 auto;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .col-item .info {
@@ -781,7 +781,6 @@ p {
     font-size: 120%;
     font-weight: normal;
     border-bottom: 1px solid #E1E1E1;
-    clear: left;
 }
 
 .facets-container ul {

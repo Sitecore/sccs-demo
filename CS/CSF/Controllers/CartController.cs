@@ -27,7 +27,6 @@ namespace Sitecore.Reference.Storefront.Controllers
     using Sitecore.Reference.Storefront.Models.InputModels;
     using Sitecore.Reference.Storefront.Models.JsonResults;
     using Sitecore.Reference.Storefront.ExtensionMethods;
-    using System.Web.UI;
 
     /// <summary>
     /// Defines the shopping cart controller type.
@@ -105,7 +104,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult UpdateMiniCart(bool updateCart = false)
         {
             try
@@ -135,7 +133,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult GetCurrentCart()
         {
             try
@@ -166,7 +163,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult AddCartLine(AddCartLineInputModel inputModel)
         {
             try
@@ -201,7 +197,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [Authorize]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult AddCartLines(IEnumerable<AddCartLineInputModel> inputModels)
         {
             try
@@ -236,7 +231,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult DeleteLineItem(DeleteCartLineInputModel model)
         {
             try
@@ -276,7 +270,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult UpdateLineItem(UpdateCartLineInputModel inputModel)
         {
             try
@@ -316,7 +309,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult ApplyDiscount(DiscountInputModel model)
         {
             try
@@ -356,7 +348,6 @@ namespace Sitecore.Reference.Storefront.Controllers
         [AllowAnonymous]
         [HttpPost]
         [ValidateJsonAntiForgeryToken]
-        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
         public JsonResult RemoveDiscount(DiscountInputModel model)
         {
             try

@@ -115,10 +115,10 @@ namespace Sitecore.Reference.Storefront.Models.JsonResults
         public string CartLoyaltyCardNumber { get; set; }
 
         /// <summary>
-        /// Gets or sets the currency code.
+        /// Gets or sets the currency symbol.
         /// </summary>
-        /// <value>The currency code.</value>
-        public string CurrencyCode { get; set; }
+        /// <value>The currency symbol.</value>
+        public string CurrencySymbol { get; set; }
         
         /// <summary>
         /// Gets or sets the cart.

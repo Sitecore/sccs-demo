@@ -117,5 +117,16 @@ namespace Sitecore.Reference.Storefront.Models
         /// </summary>
         [Display(Name = "Direct mail")]
         public bool DirectMailOptOut { get; set; }
+
+        /// <summary>
+        /// Gets or sets the interests associated with the user for personalization
+        /// </summary>
+        [Display(Name = "User Preference")]
+        public string UserPreference { get; set; }
+
+        /// <summary>
+        /// A collection of the available interests to select
+        /// </summary>
+        public Dictionary<string, string> AvailableInterests { get; set; }
     }
 }

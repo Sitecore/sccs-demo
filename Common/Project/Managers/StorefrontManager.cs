@@ -30,8 +30,6 @@ namespace Sitecore.Reference.Storefront.Managers
     using Sitecore.Data.Items;
     using Sitecore.Reference.Storefront.Models.SitecoreItemModels;
     using Sitecore.Commerce.Entities.Inventory;
-    using System.Web;
-    using System;
 
     /// <summary>
     /// The manager for storefronts
@@ -39,6 +37,7 @@ namespace Sitecore.Reference.Storefront.Managers
     public static class StorefrontManager
     {
         private const string IndexNameFormat = "sitecore_{0}_index";
+        private static Dictionary<string, string> _statuses; 
         
         /// <summary>
         /// Gets the current sitecontext
@@ -88,78 +87,6 @@ namespace Sitecore.Reference.Storefront.Managers
         }
 
         /// <summary>
-        /// Used to return an external link in HTTP or HTTPS depending on the current state of the request.
-        /// </summary>
-        /// <param name="externalLink">The base URL string.</param>
-        /// <returns>Returns the external link.</returns>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
-        public static string ExternalUri(string externalLink)
-        {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return "https://" + externalLink;
-            }
-            else
-            {
-                return "http://" + externalLink;
-            }
-        }
-
-        /// <summary>
-        /// Selects the external URI based on the security of the current request connection.
-        /// </summary>
-        /// <param name="unsecuredConnection">The unsecured connection.</param>
-        /// <param name="securedConnection">The secured connection.</param>
-        /// <returns>The proper url to use.</returns>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
-        public static string SelectExternalUri(string unsecuredConnection, string securedConnection)
-        {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return securedConnection;
-            }
-            else
-            {
-                return unsecuredConnection;
-            }
-        }
-
-        /// <summary>
-        /// Returns a secure HTTPS link.
-        /// </summary>
-        /// <param name="route">The route.</param>
-        /// <returns>The HTTPS link.</returns>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
-        public static string SecureStorefrontUri(string route)
-        {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return route;
-            }
-            else
-            {
-                UrlBuilder builder = new UrlBuilder(HttpContext.Current.Request.Url);
-
-                if (!route.StartsWith("/", StringComparison.OrdinalIgnoreCase))
-                {
-                    route = "/" + route;
-                }
-
-                return string.Format(CultureInfo.InvariantCulture, "https://{0}{1}", builder.Host, route);
-            }
-        }
-
-        /// <summary>
-        /// Gets the HTML system message.
-        /// </summary>
-        /// <param name="messageKey">The message key.</param>
-        /// <returns>The system message as an HtmlString/</returns>
-        public static HtmlString GetHtmlSystemMessage(string messageKey)
-        {
-            return new HtmlString(GetSystemMessage(messageKey));
-        }
-
-            /// <summary>
         /// Gets the system message.
         /// </summary>
         /// <param name="messageKey">The message key.</param>
@@ -175,7 +102,7 @@ namespace Sitecore.Reference.Storefront.Managers
                 var searchResults = context.GetQueryable<SearchResultItem>();
                 searchResults = searchResults.Where(item => item.Path.StartsWith(contentStartPath));
                 searchResults = searchResults.Where(item => item.Language == SearchNavigation.CurrentLanguageName);
-                searchResults = searchResults.Where(item => item.Name == messageKey);
+                searchResults = searchResults.Where(item => item[StorefrontConstants.KnownFieldNames.Key] == messageKey);
 
                 var results = searchResults.GetResults();
                 var response = SearchResponse.CreateFromSearchResultsItems(new CommerceSearchOptions(), results);
@@ -192,7 +119,7 @@ namespace Sitecore.Reference.Storefront.Managers
                 }
 
                 var value = resultItem.Fields[StorefrontConstants.KnownFieldNames.Value];
-                return value == null ? string.Empty : value.Value;
+                return value == null ? string.Empty : value.ToString();
             }
         }
 
@@ -208,16 +135,43 @@ namespace Sitecore.Reference.Storefront.Managers
                 return string.Empty;
             }
 
-            string contentStartPath = CurrentStorefront.GlobalItem.Axes.GetItem(string.Concat(StorefrontConstants.KnowItemNames.Lookups, "/", StorefrontConstants.KnowItemNames.InventoryStatuses)).Paths.Path;
-            string statusPath = contentStartPath + "/" + status.Name;
-
-            Item inventoryItem = Sitecore.Context.Database.GetItem(statusPath);
-            if (inventoryItem == null)
+            var statusName = status.Name;
+            if (_statuses != null && _statuses.ContainsKey(statusName))
             {
-                return status.Name;
+                return _statuses[statusName];
             }
 
-            return inventoryItem[StorefrontConstants.KnownFieldNames.Value];
+            _statuses = new Dictionary<string, string>();
+            var lookups = CurrentStorefront.GlobalItem.Children[StorefrontConstants.KnowItemNames.Lookups];
+            if (lookups == null)
+            {
+                return statusName;
+            }
+
+            var inventoryStatuses = lookups.Children[StorefrontConstants.KnowItemNames.InventoryStatuses];
+            if (inventoryStatuses == null)
+            {
+                return statusName;
+            }
+
+            if (!inventoryStatuses.Children.Any())
+            {
+                return statusName;
+            }
+
+            foreach (Item statusItem in inventoryStatuses.Children)
+            {
+                var value = statusItem.Fields[StorefrontConstants.KnownFieldNames.Value];
+                var key = statusItem.Name;
+                if (value == null || _statuses.ContainsKey(key))
+                {
+                    continue;
+                }
+
+                _statuses.Add(key, value.ToString());
+            }
+
+            return _statuses.ContainsKey(statusName) ? _statuses[statusName] : statusName;
         }
     }
 }

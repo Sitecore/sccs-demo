@@ -59,6 +59,8 @@ namespace Sitecore.Reference.Storefront
             }
 
             cacheProvider.RemoveData(CommerceConstants.KnownCachePrefixes.Sitecore, CommerceConstants.KnownCacheNames.CommerceCartCache, id);
+
+            CartCookieHelper.DeleteCartCookieForCustomer(id);
         }
 
         /// <summary>
@@ -79,6 +81,7 @@ namespace Sitecore.Reference.Storefront
             }
             
             cacheProvider.AddData(CommerceConstants.KnownCachePrefixes.Sitecore, CommerceConstants.KnownCacheNames.CommerceCartCache, id, cart);
+            CartCookieHelper.CreateCartCookieForCustomer(id);
 
             return cart;
         }

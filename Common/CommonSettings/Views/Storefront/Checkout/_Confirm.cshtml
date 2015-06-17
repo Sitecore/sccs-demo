@@ -11,9 +11,6 @@
 // -------------------------------------------------------------------------------------------*@
 
 @{
-    var currencyDecimalSeparator = Sitecore.Context.Language.CultureInfo.NumberFormat.CurrencyDecimalSeparator;
-    var currencyGroupSeparator = Sitecore.Context.Language.CultureInfo.NumberFormat.CurrencyGroupSeparator;
-
     // Table Headers
     var productDetailsLabel = Html.Sitecore().Field("Product Details Label", Html.Sitecore().CurrentItem.Children["Confirm"]);
     var unitPriceLabel = Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem.Children["Confirm"]);
@@ -54,11 +51,6 @@
     var orderInformationLabel = Html.Sitecore().Field("Order Information Label", Html.Sitecore().CurrentItem.Children["Billing"]);
     var subtotalLabel = Html.Sitecore().Field("Subtotal Label", Html.Sitecore().CurrentItem.Children["Billing"]);
     var shippingCostLabel = Html.Sitecore().Field("Shipping Cost Label", Html.Sitecore().CurrentItem.Children["Billing"]);
-    
-    // Labels
-    var discountLabel = Html.Sitecore().Field("Discount Label", Html.Sitecore().CurrentItem.Children["Confirm"]);
-    var colorLabel = Html.Sitecore().Field("Color Label", Html.Sitecore().CurrentItem.Children["Confirm"]);
-    var deliveryLabel = Html.Sitecore().Field("Delivery Label", Html.Sitecore().CurrentItem.Children["Confirm"]);
 
     var storefront = Sitecore.Reference.Storefront.Managers.StorefrontManager.CurrentStorefront;
     bool supportsLoyaltyProgram = storefront.SupportsLoyaltyPrograms;
@@ -83,10 +75,10 @@
                         <td class="cart-info">
                             <a pid="link" data-bind="attr: {href: productUrl}"><h5 data-bind="text:displayName" pid="displayName"></h5></a>
                             <p class="cart-variable" data-bind="if: color != null">
-                                @colorLabel <span data-bind="text:color" pid="color"></span>
+                                Color: <span data-bind="text:color" pid="color"></span>
                             </p>
                             <p class="cart-delivery">
-                                @deliveryLabel
+                                Delivery:
                                 <!-- ko if: $root.isShipAll -->
                                 <span data-bind="text: $root.shippingMethod().description" pid="lineSippingMethodName"></span>
                                 <!-- /ko -->
@@ -144,7 +136,7 @@
                         <td class="cart-price">
                             <p data-bind="text:linePrice" pid="price"></p>
                             <span data-bind="visible: shouldShowDiscountOffers">
-                                <span>@discountLabel </span>
+                                <span>Discount: </span>
                                 <span pid="discountNames" data-bind="text: discountOfferNames" class="savings"></span>
                             </span>
                         </td>
@@ -282,8 +274,8 @@
                             <span id="confirm-creditCardExpMonth" data-bind=" text: expirationMonth"></span> - <span id="confirm-creditCardExpYear" data-bind="text: expirationYear"></span>
                         </li>
                         <li id="confirm-creditCardAmount">
-                            <span data-bind="text: formatCurrency(creditCardAmount, 2, '@currencyDecimalSeparator', '', '@currencyGroupSeparator')"></span>
-                            <span data-bind="text: $root.currencyCode"></span>
+                            <span data-bind="text: $root.currencySymbol"></span>
+                            <span data-bind="text: creditCardAmount"></span>
                         </li>
                     </ul>
                     <!-- /ko -->
@@ -292,8 +284,8 @@
                     <ul class="footer-lists" data-bind="with: giftCardPayment" id="confirm-giftCardContainer">
                         <li id="confirm-giftCardNumber" data-bind="text: giftCardNumber"></li>
                         <li id="confirm-giftCardAmount">
-                            <span data-bind="text: formatCurrency(giftCardAmount, 2, '@currencyDecimalSeparator', '', '@currencyGroupSeparator')"></span>
-                            <span data-bind="text: $root.currencyCode"></span>
+                            <span data-bind="text: $root.currencySymbol"></span>
+                            <span data-bind="text: giftCardAmount"></span>
                         </li>
                     </ul>
                     <!-- /ko -->
@@ -302,8 +294,8 @@
                     <ul class="footer-lists" data-bind="with: loyaltyCardPayment" id="confirm-loyaltyCardContainer">
                         <li id="confirm-loyaltyCardNumber" data-bind="text: loyaltyCardNumber"></li>
                         <li id="confirm-loyaltyCardAmount">
-                            <span data-bind="text: formatCurrency(loyaltyCardAmount, 2, '@currencyDecimalSeparator', '', '@currencyGroupSeparator')"></span>
-                            <span data-bind="text: $root.currencyCode"></span>
+                            <span data-bind="text: $root.currencySymbol"></span>
+                            <span data-bind="text: loyaltyCardAmount"></span>
                         </li>
                     </ul>
                     <!-- /ko -->

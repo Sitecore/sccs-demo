@@ -19,7 +19,6 @@ namespace Sitecore.Reference.Storefront.Models.JsonResults
 {
     using Sitecore.Diagnostics;
     using Sitecore.Commerce.Entities.LoyaltyPrograms;
-    using Sitecore.Reference.Storefront.Extensions;
 
     /// <summary>
     /// Json result for loyalty program tier operations.
@@ -93,8 +92,8 @@ namespace Sitecore.Reference.Storefront.Models.JsonResults
                 return;
             }
 
-            this.ValidFrom = cardTier.ValidFrom.ToDisplayedDate();
-            this.ValidTo = cardTier.ValidTo.ToDisplayedDate();
+            this.ValidFrom = cardTier.ValidFrom.ToShortDateString();
+            this.ValidTo = cardTier.ValidTo.ToShortDateString();
             this.IsElegible = true;
         }
     }

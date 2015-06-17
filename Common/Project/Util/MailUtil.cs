@@ -80,24 +80,21 @@ namespace Sitecore.Reference.Storefront.Util
             Item mailTemplate = mailTemplates.Children[templateName];
             if (mailTemplate == null)
             {
-                string message = StorefrontManager.GetSystemMessage("CouldNotLoadTemplateMessageError");
-                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, message, templateName)), this);
+                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, CommonTexts.CouldNotLoadTemplateMessageError, templateName)), this);
                 return false;
             }
 
             var subjectField = mailTemplate.Fields[StorefrontConstants.KnownFieldNames.Subject];
             if (subjectField == null)
             {
-                string message = StorefrontManager.GetSystemMessage("CouldNotFindEmailSubjectMessageError");
-                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, message, templateName)), this);
+                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, CommonTexts.CouldNotFindEmailSubjectMessageError, templateName)), this);
                 return false;
             }
 
             var bodyField = mailTemplate.Fields[StorefrontConstants.KnownFieldNames.Body];
             if (bodyField == null)
             {
-                string message = StorefrontManager.GetSystemMessage("CouldNotFindEmailBodyMessageError");
-                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, message, templateName)), this);
+                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, CommonTexts.CouldNotFindEmailBodyMessageError, templateName)), this);
                 return false;
             }
 
@@ -157,15 +154,12 @@ namespace Sitecore.Reference.Storefront.Util
             try
             {
                 MainUtil.SendMail(message);
-
-                string infoMessage = StorefrontManager.GetSystemMessage("MailSentToMessage");
-                Log.Info(Translate.Text(string.Format(CultureInfo.InvariantCulture, infoMessage, message.To, message.Subject)), "SendMailFromTemplate");
+                Log.Info(Translate.Text(string.Format(CultureInfo.InvariantCulture, CommonTexts.MailSentToMessage, message.To, message.Subject)), "SendMailFromTemplate");
                 return true;
             }
             catch (Exception e)
             {
-                string errorMessage = StorefrontManager.GetSystemMessage("CouldNotSendMailMessageError");
-                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, errorMessage, message.Subject, message.To)), e, "SendMailFromTemplate");
+                Log.Error(Translate.Text(string.Format(CultureInfo.InvariantCulture, CommonTexts.CouldNotSendMailMessageError, message.Subject, message.To)), e, "SendMailFromTemplate");
                 return false;
             }
         }

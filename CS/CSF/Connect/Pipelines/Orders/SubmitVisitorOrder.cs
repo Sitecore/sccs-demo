@@ -27,9 +27,6 @@ namespace Sitecore.Reference.Storefront.Connect.Pipelines.Orders
     using Sitecore.Commerce.Services.Orders;
     using Sitecore.Diagnostics;
     using Sitecore.Reference.Storefront.Models;
-    using System.Text;
-    using Sitecore.Data.Items;
-    using System.Collections.Generic;
 
     /// <summary>
     /// SubmitVisitorOrder pipeline processor
@@ -40,7 +37,6 @@ namespace Sitecore.Reference.Storefront.Connect.Pipelines.Orders
         /// Processes the specified arguments.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling")]
         public override void Process(ServicePipelineArgs args)
         {
             Assert.ArgumentNotNull(args, "args");
@@ -67,24 +63,7 @@ namespace Sitecore.Reference.Storefront.Connect.Pipelines.Orders
                             continue;
                         }
 
-                        // Store the image as a string since a dictionary is not serializable and causes problems in C&OM.
-                        StringBuilder imageList = new StringBuilder();
-                        foreach (MediaItem image in ((CustomCommerceCartLine)cartLine).Images)
-                        {
-                            if (image != null)
-                            {
-                                if (imageList.Length > 0)
-                                {
-                                    imageList.Append("|");
-                                }
-
-                                imageList.Append(image.ID.ToString());
-                                imageList.Append(",");
-                                imageList.Append(image.MediaPath);
-                            }
-                        }
-
-                        lineItem["Images"] = imageList.ToString();
+                        lineItem["Images"] = ((CustomCommerceCartLine)cartLine).Images.ToDictionary(image => image.ID.ToString(), image => image.MediaPath);
                     }
                 }
 
