@@ -31,6 +31,7 @@ namespace Sitecore.Reference.Storefront.Controllers
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.Mvc;
+    using System.Web.UI;
 
     /// <summary>
     /// Manages all search related requests
@@ -46,7 +47,7 @@ namespace Sitecore.Reference.Storefront.Controllers
 
         #endregion
 
-        #region Properties
+        #region Constructors
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchController"/> class.
@@ -87,6 +88,39 @@ namespace Sitecore.Reference.Storefront.Controllers
         }
 
         /// <summary>
+        /// Searches the event.
+        /// </summary>
+        /// <param name="searchKeyword">The search keyword.</param>
+        /// <param name="pageNumber">The page number.</param>
+        /// <param name="facetValues">The facet values.</param>
+        /// <param name="sortField">The sort field.</param>
+        /// <param name="pageSize">Size of the page.</param>
+        /// <param name="sortDirection">The sort direction.</param>
+        /// <returns>The search event view (empty)</returns>
+        [OutputCache(NoStore = true, Location = OutputCacheLocation.None)]
+        public ActionResult SearchEvent(
+            [Bind(Prefix = StorefrontConstants.QueryStrings.SearchKeyword)] string searchKeyword,
+            [Bind(Prefix = StorefrontConstants.QueryStrings.Paging)] int? pageNumber,
+            [Bind(Prefix = StorefrontConstants.QueryStrings.Facets)] string facetValues,
+            [Bind(Prefix = StorefrontConstants.QueryStrings.Sort)] string sortField,
+            [Bind(Prefix = StorefrontConstants.QueryStrings.PageSize)] int? pageSize,
+            [Bind(Prefix = StorefrontConstants.QueryStrings.SortDirection)] CommerceConstants.SortDirection? sortDirection)
+        {
+            var searchInfo = this.GetSearchInfo(searchKeyword, pageNumber, facetValues, sortField, pageSize, sortDirection);
+            if (searchInfo.SearchOptions != null)
+            {
+                var searchResult = this.GetChildProducts(searchInfo.SearchOptions, searchKeyword, searchInfo.Catalog.Name);
+
+                if (!string.IsNullOrWhiteSpace(searchKeyword))
+                {
+                    this.CatalogManager.RegisterSearchEvent(this.CurrentStorefront, searchKeyword, searchResult.TotalItemCount);
+                }
+            }
+
+            return this.View(this.CurrentRenderingView);
+        }
+
+        /// <summary>
         /// The action for rendering the search results facets view
         /// </summary>
         /// <param name="searchKeyword">The search keyword.</param>
@@ -104,6 +138,11 @@ namespace Sitecore.Reference.Storefront.Controllers
             [Bind(Prefix = StorefrontConstants.QueryStrings.PageSize)] int? pageSize,
             [Bind(Prefix = StorefrontConstants.QueryStrings.SortDirection)] CommerceConstants.SortDirection? sortDirection)
         {
+            if (searchKeyword == null)
+            {
+                searchKeyword = string.Empty;
+            }
+
             var searchInfo = this.GetSearchInfo(searchKeyword, pageNumber, facetValues, sortField, pageSize, sortDirection);
             var viewModel = this.GetProductFacetsViewModel(searchInfo.SearchOptions, searchKeyword, searchInfo.Catalog.Name, this.CurrentRendering);
             return this.View(this.GetAbsoluteRenderingView("/Catalog/ProductFacets"), viewModel);
@@ -326,7 +365,7 @@ namespace Sitecore.Reference.Storefront.Controllers
                 if (childProducts != null && childProducts.SearchResultItems.Count > 0)
                 {
                     this.CatalogManager.GetProductBulkPrices(categoryViewModel.ChildProducts);
-                    this.CatalogManager.GetProductsStockStatus(categoryViewModel.ChildProducts);
+                    this.CatalogManager.InventoryManager.GetProductsStockStatus(this.CurrentStorefront, categoryViewModel.ChildProducts);
                     foreach (var productViewModel in categoryViewModel.ChildProducts)
                     {
                         Item productItem = childProducts.SearchResultItems.Where(item => item.Name == productViewModel.ProductId).Single();
