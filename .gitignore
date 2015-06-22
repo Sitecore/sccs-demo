@@ -18,4 +18,4 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
-*.bak
+packages/

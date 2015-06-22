@@ -97,10 +97,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\CommerceServer.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Kamsar.WebConsole, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -208,6 +216,10 @@
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Unicorn, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unicorn.2.0.4\lib\net45\Unicorn.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebActivatorEx">
       <HintPath>..\..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
     </Reference>
@@ -255,17 +267,8 @@
     <Content Include="License.txt" />
     <Content Include="OrderObjectMappings.xml" />
     <Content Include="OrderPipelineMappings.xml" />
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Index.Lucene.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Index.Solr.config.example">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Sitecore.ItemWebApi.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sitecore\Copyrights\CastleWinsor_Apache.txt" />
     <Content Include="Sitecore\Copyrights\Knockout.Validation_MIT.txt" />
@@ -276,24 +279,17 @@
     <Content Include="Sitecore\Copyrights\Microsoft.Web.Infrastructure-eula.htm" />
     <Content Include="Sitecore\Copyrights\Newtonsoft.Json_MIT.txt" />
     <Content Include="Sitecore\Copyrights\WebActivatorEx_MSPL.txt" />
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Catalog.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Customer.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Orders.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Shipping.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Payments.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.Carts.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Carts.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Catalog.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Customer.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Index.Lucene.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Index.Solr.config.example" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Orders.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Payments.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Shipping.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Sitecore.ItemWebApi.config" />
     <None Include="Properties\PublishProfiles\DynamicsRetail.pubxml" />
     <Content Include="MergeFiles\Merge.Commerce.Storefront.config">
       <SubType>Designer</SubType>
@@ -409,11 +405,6 @@
     <Compile Include="Infrastructure\WindsorControllerFactory.cs" />
     <Compile Include="Infrastructure\WindsorHttpControllerActivator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\SC.Commerce.Storefront\Commerce.Storefront.config">
-      <SubType>Designer</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
