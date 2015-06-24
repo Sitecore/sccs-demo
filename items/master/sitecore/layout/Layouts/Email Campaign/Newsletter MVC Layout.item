@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {3A35D297-40C3-49B3-93FB-3CC5A08B50D2}
+database: master
+path: /sitecore/layout/Layouts/Email Campaign/Newsletter MVC Layout
+parent: {1DF8B7A1-C81B-4FA7-A886-CF11E81693EA}
+name: Newsletter MVC Layout
+master: {00000000-0000-0000-0000-000000000000}
+template: {3A45A723-64EE-4919-9D41-02FD40FD1466}
+templatekey: Layout
+
+----field----
+field: {A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}
+name: Path
+key: path
+content-length: 51
+
+/layouts/EmailCampaign/MVC/Newsletter Layout.cshtml
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----field----
+field: {56776EDF-261C-4ABC-9FE7-70C618795239}
+name: __Help link
+key: __help link
+content-length: 0
+
+
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 34fa3983-4486-480e-9d9c-f2aad05e3534
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20131213T174215:635225533352498324
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+34fa3983-4486-480e-9d9c-f2aad05e3534
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20131216T182821:635228153018829572
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

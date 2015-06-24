@@ -9,6 +9,7 @@
     // either express or implied. See the License for the specific language governing permissions
     // and limitations under the License.
     // -------------------------------------------------------------------------------------------*@
+
 @{
     var productDetailsLabel = Html.Sitecore().Field("Product Details Label", Html.Sitecore().CurrentItem);
     var unitPriceLabel = Html.Sitecore().Field("Unit Price Label", Html.Sitecore().CurrentItem);
@@ -22,6 +23,7 @@
     var addingPromoCodeLabel = Html.Sitecore().Field("Adding Promo Code Button", Html.Sitecore().CurrentItem);
     var removeButtonLabel = Html.Sitecore().Field("Remove Button", Html.Sitecore().CurrentItem);
 }
+
 <div class="wrap-content-checkout" id="cartContainer">
     <div class="row">
         <div class="cart col-md-12">
@@ -42,6 +44,7 @@
                             <th class="text-right">@totalLabel</th>
                         </tr>
                     </thead>
+
                     <tbody data-bind="foreach: cartLines">
                         @Html.Partial("~/Views/Storefront/ShoppingCart/_LineItem.cshtml")
                     </tbody>
@@ -57,6 +60,7 @@
     <div class="row">
         <div class="col-md-7"><p>&nbsp;</p></div>
         <div class="col-md-5" id="promoCodeSection">
+            <div class="form-group">@enterCouponCodeMessage</div>
             <div class="input-group">
                 <input type="text" class="form-control" id="discountcode_cart" placeholder="@promoCodeLabel" data-bind="value: promoCode, valueUpdate: 'keyup'">
                 <span class="input-group-btn">

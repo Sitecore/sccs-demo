@@ -87,6 +87,7 @@
     <Content Include="Content\Storefront\bootstrap-addins.css" />
     <Content Include="Content\Storefront\bootstrap-theme.css" />
     <Content Include="Content\Storefront\bootstrap.css" />
+    <Content Include="Content\Storefront\font-awesome.min.css" />
     <Content Include="Content\Storefront\sitecore-theme.css" />
     <Content Include="Images\loading.gif" />
     <Content Include="img\glyphicons-halflings-white.png" />
@@ -284,6 +285,8 @@
     <Content Include="Views\Storefront\Catalog\_FourProductSlideImplicit.cshtml" />
     <Content Include="Views\Storefront\Catalog\ProductSummaryPersonalized.cshtml" />
     <Content Include="Views\Storefront\Shared\PDFCatalogDetails.cshtml" />
+    <Content Include="Views\Storefront\Shared\PrintOnly.cshtml" />
+    <Content Include="Views\Storefront\Shared\SearchEvent.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

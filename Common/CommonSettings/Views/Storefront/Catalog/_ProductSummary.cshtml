@@ -21,6 +21,7 @@
 
     bool isCategory = Model.Item.Template.Key.Equals("generalcategory", StringComparison.OrdinalIgnoreCase);
     var brand = @Model.RenderField("Brand");
+    var brandLength = brand.ToString().Length;
 }
 
 <div class="col-item">
@@ -36,7 +37,7 @@
             else
             {
                 <a href="@Model.GetLink()">
-                    <img src="http://placehold.it/300x300" class="img-responsive" alt="product image" title="@Model.DisplayName" />
+                    @Html.Sitecore().Field("Image", Html.Sitecore().CurrentItem, new { Parameters = new Sitecore.Collections.SafeDictionary<string> { { "class", "img-responsive" }, { "title", @Model.DisplayName } } })
                 </a>
             }
         }
@@ -47,7 +48,7 @@
                 <a href="@Model.GetLink()">
                     <h5>@Model.DisplayName</h5>
                 </a>
-                @if (@brand != null)
+                @if (@brand != null && @brandLength > 0)
                 {
                     <p>@brand</p>
                 }

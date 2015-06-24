@@ -24,7 +24,7 @@ function LineItemData(line) {
     self.externalCartLineId = line.ExternalCartLineId;
     self.productUrl = line.ProductUrl;
     self.discountOfferNames = line.DiscountOfferNames;
-    self.shouldShowSavings = ko.observable(self.lineItemDiscount !== "$0.00" ? true : false);
+    self.shouldShowSavings = ko.observable(self.lineItemDiscount.indexOf("0.00") < 0 ? true : false);
     self.shouldShowDiscountOffers = ko.observable(self.discountOfferNames.length > 0 ? true : false);
 
     // shipping //
@@ -39,7 +39,7 @@ function LineItemData(line) {
     self.isLineShipToStore = ko.observable(false);
     self.isLineShipToEmail = ko.observable(false);
     self.showShipOptionContent = ko.observable(false);
-    self.selectedShippingOptionName = ko.observable('please select delivery first');
+    self.selectedShippingOptionName = ko.observable(GetMessage('SelectDeliveryFirstMessage'));
     self.toggleShipContent = function () {
         self.showShipOptionContent(!self.showShipOptionContent());
     };

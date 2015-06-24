@@ -499,6 +499,13 @@
 					<Attribute name="IsRestricted" displayName="Is Property Restricted" description="Indicates that this property requires an elevated priviledge level in order to perform an update." value="0"/>
 					<Attribute name="IsMappedToLdapUserAccountControl" displayName="Is Mapped To LDAP User Account Control" description="Indicates that this property maps to the userAccountControl DataMember of a LDAP DataSource." value="0"/>
 				</Property>
+				<Property name="user_preference" displayName="User Preference" description="A field to store user preferences" propType="STRING">
+					<DataRef idref="UPM_SQLSource.UserObject.u_user_preference"/>
+					<Attribute name="MinLength" displayName="Minimum Length" description="Minimum length of this property value" value="0"/>
+					<Attribute name="MaxLength" displayName="Maximum Length" description="Maximum length of this property value" value="256"/>
+					<Attribute name="IsRestricted" displayName="Is Property Restricted" description="Indicates that this property requires an elevated priviledge level in order to perform an update." value="0"/>
+					<Attribute name="IsMappedToLdapUserAccountControl" displayName="Is Mapped To LDAP User Account Control" description="Indicates that this property maps to the userAccountControl DataMember of a LDAP DataSource." value="0"/>
+				</Property>
       </Group>
       <Group name="AccountInfo" displayName="Account Info" description="Accounting Information Group">
         <Property name="org_id" displayName="Organization ID" description="ID of the organization this user is associated with" propType="PROFILE" referenceString="Profile Definitions.Organization">
@@ -706,6 +713,7 @@
 				<DataMember name="u_default_shopper_list" displayName="u_default_shopper_list" description="Default shopper list for this user" memberType="STRING"/>
 				<DataMember name="u_external_id" displayName="u_external_id" description="External ID for this user" memberType="STRING" isIndexed="1" isRequired="1"/>
 				<DataMember name="u_comment" displayName="Comment" description="Comment for this user" memberType="STRING"/>
+				<DataMember name="u_user_preference" displayName="User Preference" description="Custom user preferences" memberType="STRING"/>
       </DataObject>
       <DataObject name="CreditCards" displayName="Credit Cards">
         <DataMember name="u_payment_group_id" displayName="Payment Group ID" description="ID of an orders system payment group." memberType="STRING" isRequired="1"/>

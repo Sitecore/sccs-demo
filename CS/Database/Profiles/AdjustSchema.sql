@@ -58,6 +58,12 @@ BEGIN
 END
 GO
 
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'userobject' AND COLUMN_NAME = 'u_user_preference')
+BEGIN
+	ALTER TABLE dbo.UserObject ADD u_user_preference nvarchar(256) NULL
+END
+GO
+
 /********************
 	ADD INDEXES
 ********************/
