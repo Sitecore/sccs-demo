@@ -792,7 +792,6 @@ namespace Sitecore.Reference.Storefront.Controllers
 
         /// <summary>
         /// Gets the Discount information for a product for display on the details page
-        /// TODO - Not sure this is the best way to do this. Investigate
         /// </summary>
         /// <param name="productItem">The item to get discount info</param>
         /// <returns></returns>

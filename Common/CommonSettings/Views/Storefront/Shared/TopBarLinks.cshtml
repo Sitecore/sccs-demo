@@ -25,13 +25,14 @@
 
             if (Request.IsAuthenticated)
             {
-                <li>
-                    <a class="quicklink-space" id="UserNameLink" href="@StorefrontManager.StorefrontUri("/accountmanagement")" class="username" title="@myAccountAlt">@Sitecore.Context.User.LocalName</a>
+                <li class="quicklink-space">
+                    Hello @Sitecore.Context.User.Profile.FullName
+                    @*<a class="quicklink-space" id="UserNameLink" href="@StorefrontManager.StorefrontUri("/accountmanagement")" class="username" title="@myAccountAlt">@Sitecore.Context.User.LocalName</a>*@
                 </li>
-            
+
                 displayPipe = true;
             }
-            
+
             for (int i = 0; i < links.Length; i++)
             {
                 Item link = links[i];
@@ -42,10 +43,10 @@
 
                 string linkString = link["Link"];
 
-                bool show =  (showAlways.Checked) || (showWhenAuthenticated.Checked && Request.IsAuthenticated) || (!showWhenAuthenticated.Checked && !Request.IsAuthenticated);
-            
+                bool show = (showAlways.Checked) || (showWhenAuthenticated.Checked && Request.IsAuthenticated) || (!showWhenAuthenticated.Checked && !Request.IsAuthenticated);
+
                 if (show)
-                { 
+                {
                     if (displayPipe)
                     {
                         <li class="quicklink-space"> | </li>

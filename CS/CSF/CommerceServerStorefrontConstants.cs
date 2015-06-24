@@ -96,6 +96,11 @@ namespace Sitecore.Reference.Storefront
             public const string ShippingOptionValue = "Shipping Option Value";
 
             /// <summary>
+            /// The shipping option value field.
+            /// </summary>
+            public const string ShippingOptionName = "Value";
+
+            /// <summary>
             /// The shipping options location path field.
             /// </summary>
             public const string ShippingOptionsLocationPath = "Shipping Options location path";

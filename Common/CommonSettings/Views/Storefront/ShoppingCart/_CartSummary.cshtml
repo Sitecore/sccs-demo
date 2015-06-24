@@ -35,12 +35,13 @@
         <span class="text">@shippingLabel</span>
         <span class="amount" data-bind="text: shippingTotal" pid="shippingTotal"></span>
     </div>
+    <div class="col-md-12 summary">
+        <span class="text">@totalSavingsLabel</span>
+        <span class="amount" data-bind="text: discount" pid="discountTotal"></span>
+    </div>
     <div class="col-md-12 total">
         <span class="text">@orderTotalLabel</span>
         <span class="amount" data-bind="text: total" pid="total"></span>
     </div>
-    <div class="col-md-12">
-        <span>@totalSavingsLabel </span>
-        <span data-bind="text: discount" pid="discountTotal"></span>
-    </div>
+    
 </div>
