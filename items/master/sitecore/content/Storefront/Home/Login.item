@@ -1,0 +1,207 @@
+----item----
+version: 1
+id: {0F4C1374-5B25-4EB9-AC38-5AB567BA4CB0}
+database: master
+path: /sitecore/content/Storefront/Home/Login
+parent: {441B60D3-09BB-4111-A3AD-D10076B78B54}
+name: Login
+master: {00000000-0000-0000-0000-000000000000}
+template: {F409B9A7-B101-4DC4-AEDA-E15E09E7D719}
+templatekey: Login Page
+
+----field----
+field: {769DCA41-4C8A-4F0C-A078-82C1FF929C59}
+name: Email Address Placeholder
+key: email address placeholder
+content-length: 13
+
+Email Address
+----field----
+field: {C3A24E20-8391-4568-AFFE-AB48DF628FE5}
+name: Password Placeholder
+key: password placeholder
+content-length: 8
+
+Password
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+People/16x16/dude1.png
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 955
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{17F64DAC-2A2C-4F61-A993-F3BC59203AA0}"><p:d /></r><r uid="{D0FFD21B-BDDF-4C59-A150-C43C76CABF37}"><p:d /></r><r uid="{5D2C83EE-F8CA-41B9-BBF2-03CBC74D3F52}" s:ph="topleft" /><r uid="{8C308774-5362-4996-A416-527ED85204F1}" p:before="r[@uid='{1B0865BA-8725-40D7-B472-5466055F1834}']" /><r uid="{1B0865BA-8725-40D7-B472-5466055F1834}" p:before="r[@uid='{E72F052A-8790-4C9B-9335-E0EFDEABF2A4}']" /><r uid="{E72F052A-8790-4C9B-9335-E0EFDEABF2A4}" p:before="r[@uid='{0E2D603A-CF36-4EE2-B598-D2E06AEBD5AE}']" /><r uid="{0E2D603A-CF36-4EE2-B598-D2E06AEBD5AE}" p:before="r[@uid='{0D3D37F8-ED81-4F72-B7C2-8D5AF8EB0094}']" /><r uid="{0D3D37F8-ED81-4F72-B7C2-8D5AF8EB0094}" p:before="r[@uid='{1A6AE860-A323-460D-B8D7-CEFA22469672}']" s:ph="topright-links" /><r uid="{1A6AE860-A323-460D-B8D7-CEFA22469672}" p:before="r[@uid='{3C2F52A6-A439-456D-A812-04A831DB8A0F}']" /></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}
+----version----
+language: en
+version: 1
+revision: 552201d5-7307-48ea-9f73-f1e995c6d3e0
+
+----field----
+field: {EC1F4944-D675-42F6-B354-A0A1BF04BFF8}
+name: Title
+key: title
+content-length: 7
+
+Sign Up
+----field----
+field: {C75DE0E7-17FF-4086-8552-9D68B7667809}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" />
+----field----
+field: {9F832330-D023-478C-93FC-220C1129C714}
+name: Signing Button
+key: signing button
+content-length: 11
+
+Signing ...
+----field----
+field: {C38AA797-891E-40DE-8B95-D1D502CD3261}
+name: Customer Message 1
+key: customer message 1
+content-length: 19
+
+Returning customers
+----field----
+field: {F5ED105B-6576-4A4C-B5BD-61D69C4B4C51}
+name: Customer Message 2
+key: customer message 2
+content-length: 36
+
+Enter you email address and password
+----field----
+field: {147CFB98-67FD-459E-8A8E-4A8092075350}
+name: Email
+key: email
+content-length: 13
+
+Email Address
+----field----
+field: {32D9809A-9D32-4F3C-BC15-317BF66DD194}
+name: Password
+key: password
+content-length: 8
+
+Password
+----field----
+field: {BDBDC686-D372-484A-B650-B6FD48BAF3A3}
+name: Sign In Button
+key: sign in button
+content-length: 7
+
+Sign in
+----field----
+field: {8408455C-FA71-4AF1-976F-59D1F70169C2}
+name: Register New Account
+key: register new account
+content-length: 20
+
+Register new account
+----field----
+field: {A5461769-1021-4358-8395-108D39606CB0}
+name: Guest Checkout Button
+key: guest checkout button
+content-length: 17
+
+Checkout as guest
+----field----
+field: {32230721-8845-4A48-8020-5C5B3D3C9569}
+name: Facebook Button
+key: facebook button
+content-length: 19
+
+Connect to facebook
+----field----
+field: {B2AFD9F7-2E3D-4EAA-A0CF-A82D1C308EC1}
+name: Facebook Text
+key: facebook text
+content-length: 150
+
+                <h3>Additional sign in options</h3>
+                <p>You will be automatically registered with us if you are a first-time user.</p>
+
+----field----
+field: {FD6DE0AA-3C18-41DF-B3B1-55ED5F16A46E}
+name: Forgot Password
+key: forgot password
+content-length: 16
+
+Forgot password?
+----field----
+field: {CC1189E1-1FDC-4396-BE4D-C5A5B107B7EB}
+name: Email Missing Message
+key: email missing message
+content-length: 22
+
+The email is required.
+----field----
+field: {2DD792A4-EE8B-4227-8580-F12071658C89}
+name: Password Missing Message
+key: password missing message
+content-length: 25
+
+The password is required.
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 420
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{5D2C83EE-F8CA-41B9-BBF2-03CBC74D3F52}" p:before="r[@uid='{8C308774-5362-4996-A416-527ED85204F1}']" /><r uid="{E72F052A-8790-4C9B-9335-E0EFDEABF2A4}" p:before="r[@uid='{0E2D603A-CF36-4EE2-B598-D2E06AEBD5AE}']" /><r uid="{0D3D37F8-ED81-4F72-B7C2-8D5AF8EB0094}" p:before="r[@uid='{1A6AE860-A323-460D-B8D7-CEFA22469672}']" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20141119T095223Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+552201d5-7307-48ea-9f73-f1e995c6d3e0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150622T223108:635706090687299266Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{FCA998C5-0CC3-4F91-94D8-0A4E6CAECE88}

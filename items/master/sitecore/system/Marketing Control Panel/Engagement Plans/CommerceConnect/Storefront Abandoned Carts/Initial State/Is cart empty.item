@@ -1,0 +1,113 @@
+----item----
+version: 1
+id: {1C98419B-A9F2-4E4F-A0D5-BE8F1CCA5DA9}
+database: master
+path: /sitecore/system/Marketing Control Panel/Engagement Plans/CommerceConnect/Storefront Abandoned Carts/Initial State/Is cart empty
+parent: {7B735494-6C84-4258-9FC0-0B94459B447A}
+name: Is cart empty
+master: {8C90E12F-4E2E-4E3D-9137-B2D5F5DD40C0}
+template: {0A43A0FE-7E0E-49EF-95D4-E3DE34F4F175}
+templatekey: Engagement Plan Condition
+
+----field----
+field: {E13DCD09-D9BB-43C9-8D7D-438C79D714CA}
+name: Evaluate
+key: evaluate
+content-length: 38
+
+{F487AA7E-DF8D-4B8D-B168-07DA8F3CA658}
+----field----
+field: {21F3482B-BB14-4555-BA5D-AF20D400D5B9}
+name: Rule
+key: rule
+content-length: 228
+
+<ruleset>
+  <rule uid="{FD3F0DB5-DCD0-4F30-B9AB-E76AB903DACB}">
+    <conditions>
+      <condition id="{1F3EF36E-E64E-4310-803D-39EEBE4A08B5}" uid="43D1A557943E454AA5E72DED2862CDB1" />
+    </conditions>
+  </rule>
+</ruleset>
+----field----
+field: {D2368879-C784-4031-9B79-6A3BF3CB444E}
+name: Next state
+key: next state
+content-length: 36
+
+b0966066-1d44-4632-9387-7a2c49528021
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+f4d31842-c7e3-4b85-a2cb-439154886911
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+00000000-0000-0000-0000-000000000000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: d2af4ce2-9191-48e9-b5a2-9c71d53c462c
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 37
+
+Evaluates to 'true' if cart is empty.
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 14
+
+Is cart empty?
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150326T225626Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d2af4ce2-9191-48e9-b5a2-9c71d53c462c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150326T225626:635630073867532364Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

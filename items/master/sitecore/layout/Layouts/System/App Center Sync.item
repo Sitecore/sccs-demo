@@ -1,0 +1,126 @@
+----item----
+version: 1
+id: {083560C6-AB4B-43BE-B412-6C61C397C59D}
+database: master
+path: /sitecore/layout/Layouts/System/App Center Sync
+parent: {6E14276A-FD7F-40EC-9880-4EA96135AE9D}
+name: App Center Sync
+master: {00000000-0000-0000-0000-000000000000}
+template: {93227C5D-4FEF-474D-94C0-F252EC8E8219}
+templatekey: Layout Folder
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 35
+
+Applications/32x32/gear_refresh.png
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+-100
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 730
+
+ar|sitecore\Sitecore Client Authoring|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Designing|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Developing|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Users|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Limited Page Editor|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|
+----version----
+language: en
+version: 1
+revision: 5060f1cf-0f08-482e-9f24-9e76ac79a086
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120907T094611
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5060f1cf-0f08-482e-9f24-9e76ac79a086
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140703T130127:635399892879920976
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 2
+revision: 5060f1cf-0f08-482e-9f24-9e76ac79a086
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20120907T094611
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5060f1cf-0f08-482e-9f24-9e76ac79a086
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140703T130127:635399892879920976
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
