@@ -95,14 +95,17 @@ namespace Sitecore.Reference.Storefront.Managers
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
         public static string ExternalUri(string externalLink)
         {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return "https://" + externalLink;
-            }
-            else
-            {
-                return "http://" + externalLink;
-            }
+            //if (HttpContext.Current.Request.IsSecureConnection)
+            //{
+            //    return "https://" + externalLink;
+            //}
+            //else
+            //{
+            //    return "http://" + externalLink;
+            //}
+
+            //Disabling HTTPS for Demo
+            return "http://" + externalLink;
         }
 
         /// <summary>
@@ -114,14 +117,17 @@ namespace Sitecore.Reference.Storefront.Managers
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
         public static string SelectExternalUri(string unsecuredConnection, string securedConnection)
         {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return securedConnection;
-            }
-            else
-            {
-                return unsecuredConnection;
-            }
+            //if (HttpContext.Current.Request.IsSecureConnection)
+            //{
+            //    return securedConnection;
+            //}
+            //else
+            //{
+            //    return unsecuredConnection;
+            //}
+
+            //Disabling HTTPS for Demo
+            return unsecuredConnection;
         }
 
         /// <summary>
@@ -132,21 +138,24 @@ namespace Sitecore.Reference.Storefront.Managers
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1055:UriReturnValuesShouldNotBeStrings")]
         public static string SecureStorefrontUri(string route)
         {
-            if (HttpContext.Current.Request.IsSecureConnection)
-            {
-                return route;
-            }
-            else
-            {
-                UrlBuilder builder = new UrlBuilder(HttpContext.Current.Request.Url);
+            //if (HttpContext.Current.Request.IsSecureConnection)
+            //{
+            //    return route;
+            //}
+            //else
+            //{
+            //    UrlBuilder builder = new UrlBuilder(HttpContext.Current.Request.Url);
 
-                if (!route.StartsWith("/", StringComparison.OrdinalIgnoreCase))
-                {
-                    route = "/" + route;
-                }
+            //    if (!route.StartsWith("/", StringComparison.OrdinalIgnoreCase))
+            //    {
+            //        route = "/" + route;
+            //    }
 
-                return string.Format(CultureInfo.InvariantCulture, "https://{0}{1}", builder.Host, route);
-            }
+            //    return string.Format(CultureInfo.InvariantCulture, "https://{0}{1}", builder.Host, route);
+            //}
+
+            //Disabling HTTPS for Demo
+            return route;
         }
 
         /// <summary>
