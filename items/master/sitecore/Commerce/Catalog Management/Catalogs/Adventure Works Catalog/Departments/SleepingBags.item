@@ -1,0 +1,227 @@
+----item----
+version: 1
+id: {8DF6789E-C042-4A28-B98A-021C70FA05EF}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/SleepingBags
+parent: {4441D0B5-1080-4550-A91A-4C2C8245C986}
+name: SleepingBags
+master: {00000000-0000-0000-0000-000000000000}
+template: {DE86F6C8-3398-456B-B12E-25B0CA783060}
+templatekey: GeneralCategory
+
+----field----
+field: {59E9D069-D1EC-40EE-9C96-DCFCDD15AB86}
+name: Images
+key: images
+content-length: 38
+
+{0BE1101F-8EE1-4738-8869-42869283054B}
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 15
+
+GeneralCategory
+----field----
+field: {95F37041-A3F4-4FA2-8C3C-7A3DB52AAC75}
+name: ChildProducts
+key: childproducts
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {90BC8026-5DA2-4AAC-9330-3286CFD80EC7}
+name: ChildCategories
+key: childcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 465
+
+{"FromItemExternalId":"{8df6789e-c042-4a28-b98a-021c70fa05ef}","RelationshipExternalId":"{e3b7c048-61a9-4973-a77c-49247727b813}","ToItemExternalId":"{23567fbf-72ad-4f46-99be-56e55fdb1813}","ToItemType":"Category","Language":"en-US"}|{"FromItemExternalId":"{8df6789e-c042-4a28-b98a-021c70fa05ef}","RelationshipExternalId":"{2e7b03f2-53fa-472d-a99b-fa9e61daef91}","ToItemExternalId":"{560ecc9f-77c4-4247-97c4-4d4fb5ebf136}","ToItemType":"Category","Language":"en-US"}
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 38
+
+{4441D0B5-1080-4550-A91A-4C2C8245C986}
+----version----
+language: de-DE
+version: 1
+revision: f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150423T212259:635654209797152583Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+
+----field----
+field: {3B9B3F5D-B3C3-4509-AE80-397FA41363EE}
+name: Description
+key: description
+content-length: 33
+
+Catalog Section for Sleeping Bags
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Bags
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150423T212259:635654209797152583Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150423T212259:635654209797152583Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f647ffcd-31ee-498e-9895-3ecce2bdc1f4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150423T212259:635654209797152583Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

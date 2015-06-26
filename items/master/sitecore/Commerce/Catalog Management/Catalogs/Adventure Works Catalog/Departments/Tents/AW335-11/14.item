@@ -1,0 +1,150 @@
+----item----
+version: 1
+id: {C11E8C70-E0FB-42DB-B6BF-C121CAABD32C}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Tents/AW335-11/14
+parent: {BF921F6C-13B1-4D67-8C7C-32F826E5DFCB}
+name: 14
+master: {00000000-0000-0000-0000-000000000000}
+template: {9002EB2B-DEF9-44B3-8A02-E06EB26E94EC}
+templatekey: TentsVariant
+
+----field----
+field: {72559FF4-8183-4C38-815A-3C8C6EAC4D0B}
+name: VariantId
+key: variantid
+content-length: 2
+
+14
+----field----
+field: {B781F258-FB3A-4CC0-903C-2FBA2284C552}
+name: BasePriceVariant
+key: basepricevariant
+content-length: 8
+
+340.0000
+----field----
+field: {9B2ABE41-AB16-463B-8845-A3A5D050A016}
+name: ListPrice
+key: listprice
+content-length: 8
+
+335.0000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150522T180744:635679148640000000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {AD6D85F6-F7AA-46C5-B0D2-1997F8E738B4}
+name: ProductColor
+key: productcolor
+content-length: 5
+
+Green
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Aptos (Green)
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150522T180744:635679148640000000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150522T180744:635679148640000000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150522T180744:635679148640000000

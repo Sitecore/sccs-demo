@@ -1,0 +1,213 @@
+----item----
+version: 1
+id: {E43C60D0-0F86-4881-A129-B7A6BE795076}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Crampons/AW145-15
+parent: {B59E1DED-ED1C-4BD2-B031-7845092CBA9E}
+name: AW145-15
+master: {00000000-0000-0000-0000-000000000000}
+template: {2315D5AE-6591-441C-BA6F-4D933E1B0833}
+templatekey: Crampon
+
+----field----
+field: {59B31316-3C29-4535-948F-499E1049C504}
+name: ProductId
+key: productid
+content-length: 8
+
+AW145-15
+----field----
+field: {FB65A277-E806-4BD2-91C7-2F00A3D95798}
+name: IntroductionDate
+key: introductiondate
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {BB7B85BB-8AA0-44D0-8E85-AF587D05F03F}
+name: Images
+key: images
+content-length: 38
+
+{68475C14-15B3-4102-925A-8CCC7D947815}
+----field----
+field: {7FEC99E4-874A-470A-AB3C-A3A26084B942}
+name: BasePrice
+key: baseprice
+content-length: 8
+
+150.0000
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 8
+
+145.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 7
+
+Crampon
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+1
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {AAFAFE05-FEE3-4A8E-BBC6-DB393AE3DEFF}
+name: ProductSize
+key: productsize
+content-length: 4
+
+4-12
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 96
+
+Classic technical ice-climbing crampons, rigid, mono points available, one size fits men's 5-14.
+----field----
+field: {350C6DD2-CE51-4B1C-894F-D89BC528A353}
+name: Rating
+key: rating
+content-length: 3
+
+4.0
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 10
+
+Edgehugger
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000

@@ -1,0 +1,227 @@
+----item----
+version: 1
+id: {33910939-0C8E-467F-9447-8608235B303E}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/22565422120
+parent: {4441D0B5-1080-4550-A91A-4C2C8245C986}
+name: 22565422120
+master: {00000000-0000-0000-0000-000000000000}
+template: {4ECFC872-54FA-45D3-A5F0-82F0671EC741}
+templatekey: GiftCard
+
+----field----
+field: {8A28980F-5F31-45CC-8B8F-984FB3E4E714}
+name: Images
+key: images
+content-length: 38
+
+{2F2D7304-F009-438D-B366-DAF8108591C7}
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 6
+
+0.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 8
+
+GiftCard
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: 86852269-1495-4f88-ae3e-bdedf8ef7e32
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150223T072244Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+86852269-1495-4f88-ae3e-bdedf8ef7e32
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T081027:635602758273484015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 86852269-1495-4f88-ae3e-bdedf8ef7e32
+
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 9
+
+Gift Card
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 9
+
+Gift Card
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150223T072244Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+86852269-1495-4f88-ae3e-bdedf8ef7e32
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T081027:635602758273484015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 86852269-1495-4f88-ae3e-bdedf8ef7e32
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150223T072244Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+86852269-1495-4f88-ae3e-bdedf8ef7e32
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T081027:635602758273484015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 86852269-1495-4f88-ae3e-bdedf8ef7e32
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150223T072244Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+86852269-1495-4f88-ae3e-bdedf8ef7e32
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150223T081027:635602758273484015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,213 @@
+----item----
+version: 1
+id: {BD7A4886-BF00-44AB-B7D4-227A84843F36}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Harnesses/AW029-10
+parent: {D3D058E0-54C1-430D-A25C-5707786183AB}
+name: AW029-10
+master: {00000000-0000-0000-0000-000000000000}
+template: {A402DBDB-F1FA-4771-A4CF-59B63346F31C}
+templatekey: Harness
+
+----field----
+field: {B6533203-3335-4F8A-9797-DDADE8C4B703}
+name: ProductId
+key: productid
+content-length: 8
+
+AW029-10
+----field----
+field: {9D9E2BAD-6EB0-465A-AC58-2B85F681403D}
+name: IntroductionDate
+key: introductiondate
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {BEBFD51A-196A-417F-AA85-1FD91FAF8394}
+name: BasePrice
+key: baseprice
+content-length: 7
+
+33.0000
+----field----
+field: {DD7FFB48-21E6-4AC6-BE81-BFB9A7546E73}
+name: Images
+key: images
+content-length: 77
+
+{EB667A34-1291-4205-806F-5267B66613CE}|{AECEDF1D-0FB6-4000-AAF4-B951C6079237}
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 7
+
+29.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 7
+
+Harness
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+1
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {CED32A4E-108A-4111-8E61-2E43B3F99E2D}
+name: ProductSize
+key: productsize
+content-length: 5
+
+XS-XL
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 45
+
+Lightweight, adjustable, droppable leg loops.
+----field----
+field: {350C6DD2-CE51-4B1C-894F-D89BC528A353}
+name: Rating
+key: rating
+content-length: 3
+
+3.5
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Black Diamond Alpine Bod
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000

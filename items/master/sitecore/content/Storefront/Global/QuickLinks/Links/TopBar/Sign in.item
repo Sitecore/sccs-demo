@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {7751DF35-3737-4FB1-B60C-AD916950F43D}
+database: master
+path: /sitecore/content/Storefront/Global/QuickLinks/Links/TopBar/Sign in
+parent: {F95E9223-4DB2-4B91-B720-3B48EB0CA312}
+name: Sign in
+master: {00000000-0000-0000-0000-000000000000}
+template: {87C331AE-3293-4FD1-A5F2-A625523F3019}
+templatekey: QuickLink
+
+----field----
+field: {BA2DAACE-B30A-4489-9F25-DDD852C1B171}
+name: Generate Secure Link
+key: generate secure link
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 70238aee-7d6b-42b4-b534-e3907bb06705
+
+----field----
+field: {B861B1ED-2820-4AD8-B169-8928AC381634}
+name: Link
+key: link
+content-length: 61
+
+<link linktype="external" url="/login" anchor="" target="" />
+----field----
+field: {6CB9EB87-680B-4CB9-9946-9BAEB553F6B8}
+name: Text
+key: text
+content-length: 7
+
+Sign in
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20141021T122229Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+70238aee-7d6b-42b4-b534-e3907bb06705
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150622T203538:635706021385295418Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

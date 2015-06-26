@@ -1,0 +1,84 @@
+----item----
+version: 1
+id: {7CA697EA-5CCA-4B59-85A3-D048B285E6B4}
+database: master
+path: /sitecore/system/Marketing Control Panel/Engagement Plans/CommerceConnect/Storefront New Order Placed
+parent: {03402BEE-21E9-458A-B3F4-D004CC4F21FA}
+name: Storefront New Order Placed
+master: {6F6A861F-78CF-4859-8AD8-7A2D5CCDBEB6}
+template: {6E5B63D6-2401-4A52-8B4D-CFEF5E4E9752}
+templatekey: Engagement Plan
+
+----field----
+field: {C36D22D2-94FC-46AC-91DB-2CF322C66895}
+name: Flow designer items
+key: flow designer items
+content-length: 800
+
+<flowDesignerItems>
+  <disconnectedItems />
+  <flowRenderedItemsValues>
+    <flowRenderedItemValues itemId="c095ef33-296c-4c1f-ae15-15bdac65bf3b" x="28" y="16" width="12" height="6" zIndex="4" backgroundColor="#FF00344E" foregroundColor="#FFFFFFFF" iconUri="/~/icon/Software/32x32/shape_square.png.aspx" showIcon="false" fieldEditorValues="&lt;fields itemId=&quot;{F0762320-7242-490C-8763-F1E9B35B113B}&quot;&gt;&#xD;&#xA;  &lt;field id=&quot;{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}&quot; value=&quot;Initial State&quot; name=&quot;__Display name&quot; /&gt;&#xD;&#xA;  &lt;field id=&quot;{06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}&quot; value=&quot;A new order has been received.&quot; name=&quot;Description&quot; /&gt;&#xD;&#xA;&lt;/fields&gt;" />
+  </flowRenderedItemsValues>
+</flowDesignerItems>
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{689E2994-4656-4C58-9112-7826CB46EE69}
+----version----
+language: en
+version: 1
+revision: cbc10d9d-9a84-48a8-b554-341a374888ae
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150326T225629Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cbc10d9d-9a84-48a8-b554-341a374888ae
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150326T225633:635630073932446082Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{EDCBB550-BED3-490F-82B8-7B2F14CCD26E}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {DD4E79D3-EE90-4A41-8BF6-1D379BDE5914}
+database: master
+path: /sitecore/system/Marketing Control Panel/Engagement Plans/CommerceConnect/Storefront Products Back In Stock/ExpiredRequestsRemoved
+parent: {36B4083E-F7F7-4E60-A747-75DDBEC6BB4B}
+name: ExpiredRequestsRemoved
+master: {534EE43B-00B1-49D0-92A7-E78B9C127B00}
+template: {8CE2707A-3742-4A89-933B-065E5BE02BC9}
+templatekey: Engagement Plan State
+
+----field----
+field: {575A25C8-5C6F-4530-A48F-F38E23E9DBD5}
+name: Page Event Subscription
+key: page event subscription
+content-length: 38
+
+{AF0BD645-3B30-4148-AB36-4E9EC963AEE7}
+----field----
+field: {07CE07CB-078C-415E-8F92-96690BABD6C7}
+name: Time interval
+key: time interval
+content-length: 1
+
+1
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+dfeb93c9-3ad1-4dee-a388-bf4794d2f58b
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+00000000-0000-0000-0000-000000000000
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: f3427cbb-554d-404b-97bf-baae0df1ee21
+
+----field----
+field: {06F2D72A-1924-4B9A-BA1E-186CE4E57EFD}
+name: Description
+key: description
+content-length: 102
+
+Notification requests that have past the interest date are removed from the visitor notification list.
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 24
+
+Expired requests removed
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150326T225629Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f3427cbb-554d-404b-97bf-baae0df1ee21
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150326T225629:635630073898834159Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -1,0 +1,255 @@
+----item----
+version: 1
+id: {069D6DC9-E647-444A-AD8C-CC047B0B6C26}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Backpacks/AW325-13
+parent: {DDCDDA42-35D9-4C80-B1C0-49B3E5C3EE0B}
+name: AW325-13
+master: {00000000-0000-0000-0000-000000000000}
+template: {DF5FC52A-70B7-4335-9195-29CBBB1C29B4}
+templatekey: Backpack
+
+----field----
+field: {F986C269-06CA-45A1-AE8E-E4ADBB57A257}
+name: ProductId
+key: productid
+content-length: 8
+
+AW325-13
+----field----
+field: {F573C81F-B0CF-4967-BFAD-6FC529F372E5}
+name: BasePrice
+key: baseprice
+content-length: 8
+
+149.0000
+----field----
+field: {A62FDE25-433D-45D3-8D2E-6E9920A7D761}
+name: Images
+key: images
+content-length: 116
+
+{D7E95471-C9C0-4EA1-A7CF-AFA47D3054DA}|{FC09A129-06C2-4A8A-BA2D-1006BEBF3EB5}|{DC029743-8148-4F29-BE71-49C0F7AC3D5F}
+----field----
+field: {8577C633-6F62-46F5-BF74-DEFE0C57C388}
+name: Brand
+key: brand
+content-length: 7
+
+Contosa
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 8
+
+149.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 8
+
+Backpack
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+0
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: 0df2ac5f-a835-4956-be84-cd691b05a8d8
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127530000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0df2ac5f-a835-4956-be84-cd691b05a8d8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150522T220208:635679289281747236Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 0df2ac5f-a835-4956-be84-cd691b05a8d8
+
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 88
+
+Women's cut, adjustable waistbelt and stays, floating hipbelt, top-loading, side pockets
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Aces
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127530000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0df2ac5f-a835-4956-be84-cd691b05a8d8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150522T220208:635679289281747236Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 0df2ac5f-a835-4956-be84-cd691b05a8d8
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127530000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0df2ac5f-a835-4956-be84-cd691b05a8d8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150522T220208:635679289281747236Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 0df2ac5f-a835-4956-be84-cd691b05a8d8
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127530000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0df2ac5f-a835-4956-be84-cd691b05a8d8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150522T220208:635679289281747236Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

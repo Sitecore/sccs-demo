@@ -1,0 +1,157 @@
+----item----
+version: 1
+id: {E9E7CB4E-624B-44C8-A74C-94CFA75B3970}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Shirts/AW042-03/52
+parent: {1B168F3F-DD5D-47C6-9276-59EAD348054C}
+name: 52
+master: {00000000-0000-0000-0000-000000000000}
+template: {019CAF05-0C7F-4D03-A482-34606915EF2C}
+templatekey: ShirtsVariant
+
+----field----
+field: {7F6542B2-7BF6-4441-8021-C70FE083208E}
+name: BasePriceVariant
+key: basepricevariant
+content-length: 7
+
+48.0000
+----field----
+field: {AAB457F1-AB61-4F55-83B8-01276634C3F2}
+name: VariantId
+key: variantid
+content-length: 2
+
+52
+----field----
+field: {9B2ABE41-AB16-463B-8845-A3A5D050A016}
+name: ListPrice
+key: listprice
+content-length: 7
+
+42.0000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125007:635623662070000000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {0658758E-A8B3-42C6-87B5-3186BB0BEA68}
+name: ProductSize
+key: productsize
+content-length: 1
+
+S
+----field----
+field: {1E308A2C-9C42-498D-8369-2BDAE73014D1}
+name: ProductColor
+key: productcolor
+content-length: 3
+
+Red
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 31
+
+Men's button-down (Red, Size S)
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125007:635623662070000000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125007:635623662070000000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125007:635623662070000000

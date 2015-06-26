@@ -1,0 +1,23 @@
+----item----
+version: 1
+id: {418C8422-FC39-4891-AA32-C7CFB38B2D14}
+database: master
+path: /sitecore/templates/Storefront/Base Templates/Commerce Storefront/__Standard Values
+parent: {57507DA9-3EEA-46AA-87E8-E64CDE2F73DC}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {57507DA9-3EEA-46AA-87E8-E64CDE2F73DC}
+templatekey: Commerce Storefront
+
+----field----
+field: {7FD4CA02-383C-45E1-902D-C3ED9E4A112F}
+name: Max Number of Addresses
+key: max number of addresses
+content-length: 2
+
+10
+----version----
+language: en
+version: 1
+revision: 8dae9240-70f4-4b89-a1d5-536d82fd1bb3
+

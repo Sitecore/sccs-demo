@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {9BBC9BC3-2A0C-4FFB-91B3-0506617DEC67}
+database: master
+path: /sitecore/system/Marketing Control Panel/Profiles/Product
+parent: {12BD7E35-437B-449C-B931-23CFA12C03D8}
+name: Product
+master: {07624A03-BB2F-45D8-ABE1-15E2B1705FF3}
+template: {8E0C1738-3591-4C60-8151-54ABCC9807D1}
+templatekey: Profile
+
+----field----
+field: {5D9FE5D7-4C45-4A98-A1F5-4796A6DA428B}
+name: Name
+key: name
+content-length: 7
+
+Product
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: cfb93767-52a9-43af-b9a0-c73e23890b67
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150515T183130Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cfb93767-52a9-43af-b9a0-c73e23890b67
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150515T183130:635673114904049493Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

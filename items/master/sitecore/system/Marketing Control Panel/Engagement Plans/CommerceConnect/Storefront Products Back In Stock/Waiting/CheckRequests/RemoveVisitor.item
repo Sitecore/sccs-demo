@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {BD13E1D3-90E2-418F-A156-8B3A078040E7}
+database: master
+path: /sitecore/system/Marketing Control Panel/Engagement Plans/CommerceConnect/Storefront Products Back In Stock/Waiting/CheckRequests/RemoveVisitor
+parent: {5198C61D-9962-4F14-B763-D78CCE82259C}
+name: RemoveVisitor
+master: {534EE43B-00B1-49D0-92A7-E78B9C127B00}
+template: {8C5EAD00-5F68-4310-AB0C-84F283B5EE0A}
+templatekey: Engagement Automation Action
+
+----field----
+field: {A291A22B-99E2-46BB-A27B-8EC744275396}
+name: Type
+key: type
+content-length: 107
+
+Sitecore.Automation.MarketingAutomation.AutomationActions.RemoveVisitorAction,Sitecore.Analytics.Automation
+----field----
+field: {3F72BC07-DE92-483E-A724-D430769D9BA4}
+name: Designer ID
+key: designer id
+content-length: 36
+
+7745beb3-dff0-4844-89df-a5ba27b3cf13
+----field----
+field: {7642ED71-348B-4B88-8634-CC7B28949472}
+name: Origin ID
+key: origin id
+content-length: 36
+
+9f3be6df-5028-485b-9908-cb9f4f7018e0
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: c32ad47f-ca60-42a3-adfa-e498848da684
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 29
+
+Remove Visitor from this Plan
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150326T225632Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c32ad47f-ca60-42a3-adfa-e498848da684
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150326T225632:635630073920325392Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

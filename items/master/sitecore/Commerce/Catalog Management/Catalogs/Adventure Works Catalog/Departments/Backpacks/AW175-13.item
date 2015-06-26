@@ -1,0 +1,282 @@
+----item----
+version: 1
+id: {CA9DEC97-50E7-4CE5-BDF0-973B9AC48F02}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Backpacks/AW175-13
+parent: {DDCDDA42-35D9-4C80-B1C0-49B3E5C3EE0B}
+name: AW175-13
+master: {00000000-0000-0000-0000-000000000000}
+template: {DF5FC52A-70B7-4335-9195-29CBBB1C29B4}
+templatekey: Backpack
+
+----field----
+field: {F986C269-06CA-45A1-AE8E-E4ADBB57A257}
+name: ProductId
+key: productid
+content-length: 8
+
+AW175-13
+----field----
+field: {B1A62E8D-15CA-4BFC-8C31-C5535D6D9B2C}
+name: IntroductionDate
+key: introductiondate
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {F573C81F-B0CF-4967-BFAD-6FC529F372E5}
+name: BasePrice
+key: baseprice
+content-length: 8
+
+399.0000
+----field----
+field: {A62FDE25-433D-45D3-8D2E-6E9920A7D761}
+name: Images
+key: images
+content-length: 155
+
+{F14F8F8C-DF41-4E3A-B974-E4784BB24088}|{1CD42A06-BDC0-4BB9-A60A-E813295A41C7}|{61B9696B-64D3-4CFB-ABFD-7752165CDF15}|{05601B75-183D-4114-B902-016BDE3B3BAD}
+----field----
+field: {8577C633-6F62-46F5-BF74-DEFE0C57C388}
+name: Brand
+key: brand
+content-length: 7
+
+Litware
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 8
+
+349.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 8
+
+Backpack
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+1
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 243
+
+<tracking>
+  <profile id="{9BBC9BC3-2A0C-4FFB-91B3-0506617DEC67}" name="Product" presets="experienced|100||">
+    <key name="Brand" value="4" />
+    <key name="Complexity" value="5" />
+    <key name="Cost" value="4" />
+  </profile>
+</tracking>
+----version----
+language: de-DE
+version: 1
+revision: 3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150520T032001:635676888013660000Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: 3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 140
+
+Anti-sway, shoulder-yoke pack for long trips, aluminum frame, front fanny-pack conversion, lower sleeping bag compartment, heavy duty nylon.
+----field----
+field: {350C6DD2-CE51-4B1C-894F-D89BC528A353}
+name: Rating
+key: rating
+content-length: 3
+
+4.5
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 9
+
+Conestoga
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150520T032001:635676888013660000Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: 3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150520T032001:635676888013660000Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3adabb10-fcf7-4c0a-aebc-bb2f0b8ce9d1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150520T032001:635676888013660000Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

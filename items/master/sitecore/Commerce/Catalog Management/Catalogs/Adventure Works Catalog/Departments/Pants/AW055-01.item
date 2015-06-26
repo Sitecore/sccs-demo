@@ -1,0 +1,213 @@
+----item----
+version: 1
+id: {67F38832-8CCE-4A67-A151-B633C8F827E9}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Pants/AW055-01
+parent: {D9CCD9B1-2F5A-4895-AED9-864536161BD4}
+name: AW055-01
+master: {00000000-0000-0000-0000-000000000000}
+template: {0A3EFFDD-93BE-4D8C-A6B6-9406F224B795}
+templatekey: Pants
+
+----field----
+field: {F48DB3D0-4C18-447C-B2FA-97418FFA7740}
+name: ProductId
+key: productid
+content-length: 8
+
+AW055-01
+----field----
+field: {DDDE6A04-F610-452D-A805-42B41B56CE6B}
+name: Images
+key: images
+content-length: 116
+
+{F9E25BBA-4020-4306-BC13-1819D18B7390}|{B6F016A0-01BC-406E-84F1-55707AF3BD22}|{81ED4CF4-D2E1-40B9-8218-AC8BC84C3214}
+----field----
+field: {E30672EC-70D3-47A3-AC5E-BBBFB5B0D0C4}
+name: BasePrice
+key: baseprice
+content-length: 7
+
+58.0000
+----field----
+field: {02A04D8D-89D1-4069-8583-B8B2D43CB7CB}
+name: IntroductionDate
+key: introductiondate
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {A41E91F4-567B-4FA3-8FC9-6D9FDB3459C5}
+name: Brand
+key: brand
+content-length: 8
+
+Tailspin
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 7
+
+55.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 5
+
+Pants
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+1
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161511:635708457115000000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 47
+
+Heavy-duty, water-resistant nylon, lightweight.
+----field----
+field: {350C6DD2-CE51-4B1C-894F-D89BC528A353}
+name: Rating
+key: rating
+content-length: 3
+
+3.0
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 19
+
+Unisex hiking pants
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161511:635708457115000000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161511:635708457115000000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161511:635708457115000000

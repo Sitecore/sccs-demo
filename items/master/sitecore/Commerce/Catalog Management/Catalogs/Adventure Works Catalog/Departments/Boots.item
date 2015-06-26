@@ -1,0 +1,234 @@
+----item----
+version: 1
+id: {833102C4-765F-4FA5-8DBD-A7F785D41659}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Boots
+parent: {4441D0B5-1080-4550-A91A-4C2C8245C986}
+name: Boots
+master: {00000000-0000-0000-0000-000000000000}
+template: {DE86F6C8-3398-456B-B12E-25B0CA783060}
+templatekey: GeneralCategory
+
+----field----
+field: {59E9D069-D1EC-40EE-9C96-DCFCDD15AB86}
+name: Images
+key: images
+content-length: 38
+
+{D11267FA-D210-4754-8990-FDCA4DDD71FE}
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 15
+
+GeneralCategory
+----field----
+field: {95F37041-A3F4-4FA2-8C3C-7A3DB52AAC75}
+name: ChildProducts
+key: childproducts
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {90BC8026-5DA2-4AAC-9330-3286CFD80EC7}
+name: ChildCategories
+key: childcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {7E48EE19-93FC-4071-A192-470F1259EAE0}
+name: Runtime Search Facets
+key: runtime search facets
+content-length: 77
+
+{BCB31BCB-F921-4CC5-8DDE-0AA47EDB74C7}|{F80AC325-FE72-4242-8543-E421F0CD6E74}
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 0
+
+
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 38
+
+{4441D0B5-1080-4550-A91A-4C2C8245C986}
+----version----
+language: de-DE
+version: 1
+revision: c5796da1-5926-4081-ae5a-6d00c0791d36
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5796da1-5926-4081-ae5a-6d00c0791d36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150523T045417:635679536570284818Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: c5796da1-5926-4081-ae5a-6d00c0791d36
+
+----field----
+field: {3B9B3F5D-B3C3-4509-AE80-397FA41363EE}
+name: Description
+key: description
+content-length: 25
+
+Catalog Section for Boots
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 5
+
+Boots
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5796da1-5926-4081-ae5a-6d00c0791d36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150523T045417:635679536570284818Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: c5796da1-5926-4081-ae5a-6d00c0791d36
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5796da1-5926-4081-ae5a-6d00c0791d36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150523T045417:635679536570284818Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: c5796da1-5926-4081-ae5a-6d00c0791d36
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c5796da1-5926-4081-ae5a-6d00c0791d36
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150523T045417:635679536570284818Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

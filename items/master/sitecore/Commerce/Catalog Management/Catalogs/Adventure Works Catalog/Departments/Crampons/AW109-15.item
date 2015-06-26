@@ -1,0 +1,269 @@
+----item----
+version: 1
+id: {86759495-F028-4163-BF37-D4E15BAFA78B}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Crampons/AW109-15
+parent: {B59E1DED-ED1C-4BD2-B031-7845092CBA9E}
+name: AW109-15
+master: {00000000-0000-0000-0000-000000000000}
+template: {2315D5AE-6591-441C-BA6F-4D933E1B0833}
+templatekey: Crampon
+
+----field----
+field: {59B31316-3C29-4535-948F-499E1049C504}
+name: ProductId
+key: productid
+content-length: 8
+
+AW109-15
+----field----
+field: {FB65A277-E806-4BD2-91C7-2F00A3D95798}
+name: IntroductionDate
+key: introductiondate
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {BB7B85BB-8AA0-44D0-8E85-AF587D05F03F}
+name: Images
+key: images
+content-length: 38
+
+{4B21C793-B9A1-48CB-ACB6-34E07D641D99}
+----field----
+field: {7FEC99E4-874A-470A-AB3C-A3A26084B942}
+name: BasePrice
+key: baseprice
+content-length: 8
+
+109.0000
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {2B935D80-96A1-4D69-A1B1-3B518EA7659E}
+name: ListPrice
+key: listprice
+content-length: 8
+
+109.0000
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 7
+
+Crampon
+----field----
+field: {F1F36EF0-6875-4299-9D62-045BA4009FD3}
+name: OnSale
+key: onsale
+content-length: 1
+
+1
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 1159
+
+{"FromItemExternalId":"{86759495-f028-4163-bf37-d4e15bafa78b}","RelationshipExternalId":"{2327b367-cdc1-4412-8d19-6a605ee4c5cd}","ToItemExternalId":"{1bf8f7c1-16d5-42fd-825b-cc0897f95721}","ToItemType":"Product","Language":"en-US"}|{"FromItemExternalId":"{86759495-f028-4163-bf37-d4e15bafa78b}","RelationshipExternalId":"{f8736dc4-9f1f-48b5-82e3-ea924b4cc8e8}","ToItemExternalId":"{5875f0d3-dd4a-4060-82f4-da5af7d3eeaa}","ToItemType":"Product","Language":"en-US"}|{"FromItemExternalId":"{86759495-f028-4163-bf37-d4e15bafa78b}","RelationshipExternalId":"{e7008a8a-9b24-4f3d-ad28-1a4ff3d42d7f}","ToItemExternalId":"{de817f3a-7348-497b-a84b-c676d8f7a8df}","ToItemType":"Product","Language":"en-US"}|{"FromItemExternalId":"{86759495-f028-4163-bf37-d4e15bafa78b}","RelationshipExternalId":"{8e882e06-3806-4f21-b1ba-956735fd70ea}","ToItemExternalId":"{0884dce0-b281-4f49-9bbc-eecf11b59fba}","ToItemType":"Product","Language":"en-US"}|{"FromItemExternalId":"{86759495-f028-4163-bf37-d4e15bafa78b}","RelationshipExternalId":"{1bf1c508-7935-47fc-8184-390c7fbc19eb}","ToItemExternalId":"{966e9fef-86e4-4508-adcc-5d671c728070}","ToItemType":"Product","Language":"en-US"}
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 0
+
+
+----field----
+field: {1ADB7882-F838-4D0B-BF63-96B1CDA442EE}
+name: ParentCategories
+key: parentcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----version----
+language: de-DE
+version: 1
+revision: f5203194-36bc-4aee-a3ed-c898d2291c91
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f5203194-36bc-4aee-a3ed-c898d2291c91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150414T142626:635646183865580432Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: f5203194-36bc-4aee-a3ed-c898d2291c91
+
+----field----
+field: {AAFAFE05-FEE3-4A8E-BBC6-DB393AE3DEFF}
+name: ProductSize
+key: productsize
+content-length: 4
+
+4-12
+----field----
+field: {AE4ABB66-2F64-4BD6-9CBC-160763E55835}
+name: Description
+key: description
+content-length: 95
+
+Hiking/trekking nontechnical crampons, hinged frames, straps included, one size fits men's 5-12
+----field----
+field: {350C6DD2-CE51-4B1C-894F-D89BC528A353}
+name: Rating
+key: rating
+content-length: 3
+
+3.5
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Wafflestomper
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f5203194-36bc-4aee-a3ed-c898d2291c91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150414T142626:635646183865580432Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: fr-FR
+version: 1
+revision: f5203194-36bc-4aee-a3ed-c898d2291c91
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f5203194-36bc-4aee-a3ed-c898d2291c91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150414T142626:635646183865580432Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: f5203194-36bc-4aee-a3ed-c898d2291c91
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f5203194-36bc-4aee-a3ed-c898d2291c91
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150414T142626:635646183865580432Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

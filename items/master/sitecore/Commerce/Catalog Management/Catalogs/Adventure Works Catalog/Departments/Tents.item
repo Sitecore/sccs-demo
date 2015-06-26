@@ -1,0 +1,171 @@
+----item----
+version: 1
+id: {23567FBF-72AD-4F46-99BE-56E55FDB1813}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Tents
+parent: {4441D0B5-1080-4550-A91A-4C2C8245C986}
+name: Tents
+master: {00000000-0000-0000-0000-000000000000}
+template: {DE86F6C8-3398-456B-B12E-25B0CA783060}
+templatekey: GeneralCategory
+
+----field----
+field: {59E9D069-D1EC-40EE-9C96-DCFCDD15AB86}
+name: Images
+key: images
+content-length: 38
+
+{473B37F2-218F-4EAD-8377-6648A37D8A78}
+----field----
+field: {71B0E6A9-C9D1-4972-BB35-A34BBA8DB631}
+name: CatalogName
+key: catalogname
+content-length: 23
+
+Adventure Works Catalog
+----field----
+field: {221635A5-DB7E-44BC-976A-8D31DACC6025}
+name: DefinitionName
+key: definitionname
+content-length: 15
+
+GeneralCategory
+----field----
+field: {95F37041-A3F4-4FA2-8C3C-7A3DB52AAC75}
+name: ChildProducts
+key: childproducts
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {90BC8026-5DA2-4AAC-9330-3286CFD80EC7}
+name: ChildCategories
+key: childcategories
+content-length: 38
+
+{00000000-0000-0000-0000-000000000000}
+----field----
+field: {14DAF8A9-B4EC-46E3-AEB0-B3BA43EEAE11}
+name: Relationship List
+key: relationship list
+content-length: 465
+
+{"FromItemExternalId":"{23567fbf-72ad-4f46-99be-56e55fdb1813}","RelationshipExternalId":"{f7fa1152-dfee-4da8-896d-249b2af1ebef}","ToItemExternalId":"{8df6789e-c042-4a28-b98a-021c70fa05ef}","ToItemType":"Category","Language":"en-US"}|{"FromItemExternalId":"{23567fbf-72ad-4f46-99be-56e55fdb1813}","RelationshipExternalId":"{2087c97d-465a-4735-a1f8-d3b732df185c}","ToItemExternalId":"{560ecc9f-77c4-4247-97c4-4d4fb5ebf136}","ToItemType":"Category","Language":"en-US"}
+----field----
+field: {41D45D18-95E9-45E1-BB21-057F9F0E3BB7}
+name: PrimaryParentCategory
+key: primaryparentcategory
+content-length: 38
+
+{4441D0B5-1080-4550-A91A-4C2C8245C986}
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {3B9B3F5D-B3C3-4509-AE80-397FA41363EE}
+name: Description
+key: description
+content-length: 25
+
+Catalog Section for Tents
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 5
+
+Tents
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20150625T161512:635708457127900000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150625T161512:635708457127900000

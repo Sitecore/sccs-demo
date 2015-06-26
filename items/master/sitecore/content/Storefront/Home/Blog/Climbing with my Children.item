@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {3D3599A5-B100-4193-A589-E9026D6939BC}
+database: master
+path: /sitecore/content/Storefront/Home/Blog/Climbing with my Children
+parent: {97185336-72D1-47FB-8096-4FB5BE0A1CF9}
+name: Climbing with my Children
+master: {00000000-0000-0000-0000-000000000000}
+template: {3011C545-5283-491E-81B8-0694978500DB}
+templatekey: Blog Post Page
+
+----field----
+field: {32B3C63B-B71B-4845-A83F-D91E57AEA220}
+name: DisplayInSearchResults
+key: displayinsearchresults
+content-length: 1
+
+1
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 149
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{D0FFD21B-BDDF-4C59-A150-C43C76CABF37}"><p:d /></r></d></r>
+----version----
+language: en
+version: 1
+revision: 52ae4e91-616d-4668-a757-54b6dd048e96
+
+----field----
+field: {299A49C2-E916-47B2-B8EB-C9E9D8D1C40E}
+name: Feature Image
+key: feature image
+content-length: 58
+
+<image mediaid="{2631E299-3C4D-4BA4-9F0A-E22E08F754B1}" />
+----field----
+field: {AE723519-4EAD-4D6C-A0D3-FEACE0D9926A}
+name: Text
+key: text
+content-length: 741
+
+<p>My kids are growing fast and they both love climbing.&nbsp;<span style="font-weight: lighter;">My daughter prefers the climbing walls in the local sports centre but my son prefers the outdoors. Both are a lot more fashion conscious that I ever was and it has always been a problem for me to buy what I think is the best quality climbing gear but get them to wear it if it is &ldquo;the wrong colour&rdquo;.&nbsp;</span><span style="font-weight: lighter;">I have seen that the Black Diamond Bod is now available in a range of colours to satisfy even the fussiest child. I almost one of each colour so that my children could wear a harness to match their clothes.&nbsp;</span><span style="font-weight: lighter;">How good is that!</span></p>
+----field----
+field: {29099D33-1EAE-49AB-8F00-F31DB72EE2E4}
+name: SummaryText
+key: summarytext
+content-length: 152
+
+My kids are growing fast and they both love climbing. My daughter prefers the climbing walls in the local sports centre but my son prefers the outdoors.
+----field----
+field: {EC1F4944-D675-42F6-B354-A0A1BF04BFF8}
+name: Title
+key: title
+content-length: 25
+
+Climbing with my Children
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150416T223908Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+52ae4e91-616d-4668-a757-54b6dd048e96
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150501T173252:635660983723602189Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

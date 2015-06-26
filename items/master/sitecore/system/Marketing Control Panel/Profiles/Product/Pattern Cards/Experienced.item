@@ -1,0 +1,64 @@
+----item----
+version: 1
+id: {F140DCE7-7110-4A2D-BE0A-72E9F557C105}
+database: master
+path: /sitecore/system/Marketing Control Panel/Profiles/Product/Pattern Cards/Experienced
+parent: {DBB150D8-3207-42A0-95B4-0ED93C645C8A}
+name: Experienced
+master: {00000000-0000-0000-0000-000000000000}
+template: {4A6A7E36-2481-438F-A9BA-0453ECC638FA}
+templatekey: Pattern Card
+
+----field----
+field: {FE732790-2DDB-4657-A882-C2FCE1FBF0C9}
+name: Name
+key: name
+content-length: 11
+
+Experienced
+----field----
+field: {6DA71AD3-5849-4482-9317-D21390E5A348}
+name: Pattern
+key: pattern
+content-length: 221
+
+<tracking>
+  <profile id="{9BBC9BC3-2A0C-4FFB-91B3-0506617DEC67}" name="Product">
+    <key name="Brand" value="4" />
+    <key name="Complexity" value="5" />
+    <key name="Cost" value="4" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: fcefd9fc-b844-4f00-8c4a-d91997bd9d83
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150515T183436Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fcefd9fc-b844-4f00-8c4a-d91997bd9d83
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150520T031838:635676887184930000Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

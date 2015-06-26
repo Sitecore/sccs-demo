@@ -1,0 +1,150 @@
+----item----
+version: 1
+id: {8AA25ADA-5297-4A1A-84E9-7C461909923F}
+database: master
+path: /sitecore/Commerce/Catalog Management/Catalogs/Adventure Works Catalog/Departments/Harnesses/AW029-10/36
+parent: {BD7A4886-BF00-44AB-B7D4-227A84843F36}
+name: 36
+master: {00000000-0000-0000-0000-000000000000}
+template: {1B8A3945-2593-460A-BA72-73041B608496}
+templatekey: HarnessVariant
+
+----field----
+field: {A2083331-2833-4FFF-A7C7-9E43E2B312E0}
+name: VariantId
+key: variantid
+content-length: 2
+
+36
+----field----
+field: {AAAA93AC-48CD-464F-BB6A-60E2916E6E45}
+name: BasePriceVariant
+key: basepricevariant
+content-length: 7
+
+33.0000
+----field----
+field: {9B2ABE41-AB16-463B-8845-A3A5D050A016}
+name: ListPrice
+key: listprice
+content-length: 7
+
+29.0000
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
+
+0
+----version----
+language: de-DE
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125251:635623663710000000
+----version----
+language: en
+version: 1
+revision: 
+
+----field----
+field: {3EF6BEAC-F845-42E0-91B6-472CF41D86D6}
+name: ProductColor
+key: productcolor
+content-length: 5
+
+Black
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 32
+
+Black Diamond Alpine Bod (Black)
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125251:635623663710000000
+----version----
+language: fr-FR
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125251:635623663710000000
+----version----
+language: ja-JP
+version: 1
+revision: 
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20060419T123502:632810469020000000
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150319T125251:635623663710000000
