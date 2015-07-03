@@ -267,7 +267,6 @@
     <Content Include="Sitecore\Copyrights\Microsoft.Web.Infrastructure-eula.htm" />
     <Content Include="Sitecore\Copyrights\Newtonsoft.Json_MIT.txt" />
     <Content Include="Sitecore\Copyrights\WebActivatorEx_MSPL.txt" />
-    <Content Include="App_Config\Include\Serialization.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Carts.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Catalog.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.config" />
@@ -278,6 +277,7 @@
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Payments.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Shipping.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Sitecore.ItemWebApi.config" />
+    <Content Include="App_Config\Include\CSdemo.Serialization.config" />
     <None Include="Properties\PublishProfiles\DynamicsRetail.pubxml" />
     <Content Include="MergeFiles\Merge.Commerce.Storefront.config">
       <SubType>Designer</SubType>
