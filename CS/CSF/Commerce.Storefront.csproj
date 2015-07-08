@@ -250,23 +250,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
-    <Content Include="Global.asax.solr" />
+    <None Include="Global.asax.solr" />
     <Content Include="favicon.ico" />
-    <Content Include="License.txt" />
+    <None Include="License.txt" />
     <Content Include="OrderObjectMappings.xml" />
     <Content Include="OrderPipelineMappings.xml" />
-    <Content Include="packages.config">
+    <None Include="packages.config">
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Sitecore\Copyrights\CastleWinsor_Apache.txt" />
-    <Content Include="Sitecore\Copyrights\Knockout.Validation_MIT.txt" />
-    <Content Include="Sitecore\Copyrights\Microsoft.AspNet.Mvc_rtw_enu.htm" />
-    <Content Include="Sitecore\Copyrights\Microsoft.AspNet.Razor_rtw_enu.htm" />
-    <Content Include="Sitecore\Copyrights\Microsoft.AspNet.WebApi_rtw_enu.htm" />
-    <Content Include="Sitecore\Copyrights\Microsoft.AspNet.WebPages_rtw_enu.htm" />
-    <Content Include="Sitecore\Copyrights\Microsoft.Web.Infrastructure-eula.htm" />
-    <Content Include="Sitecore\Copyrights\Newtonsoft.Json_MIT.txt" />
-    <Content Include="Sitecore\Copyrights\WebActivatorEx_MSPL.txt" />
+    </None>
+    <None Include="Sitecore\Copyrights\CastleWinsor_Apache.txt" />
+    <None Include="Sitecore\Copyrights\Knockout.Validation_MIT.txt" />
+    <None Include="Sitecore\Copyrights\Microsoft.AspNet.Mvc_rtw_enu.htm" />
+    <None Include="Sitecore\Copyrights\Microsoft.AspNet.Razor_rtw_enu.htm" />
+    <None Include="Sitecore\Copyrights\Microsoft.AspNet.WebApi_rtw_enu.htm" />
+    <None Include="Sitecore\Copyrights\Microsoft.AspNet.WebPages_rtw_enu.htm" />
+    <None Include="Sitecore\Copyrights\Microsoft.Web.Infrastructure-eula.htm" />
+    <None Include="Sitecore\Copyrights\Newtonsoft.Json_MIT.txt" />
+    <None Include="Sitecore\Copyrights\WebActivatorEx_MSPL.txt" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Carts.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Catalog.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.config" />
@@ -278,11 +278,11 @@
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Shipping.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Sitecore.ItemWebApi.config" />
     <Content Include="App_Config\Include\CSdemo.Serialization.config" />
-    <None Include="Properties\PublishProfiles\DynamicsRetail.pubxml" />
+    <None Include="Properties\PublishProfiles\Commerce.Storefront.pubxml" />
     <Content Include="MergeFiles\Merge.Commerce.Storefront.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="web.config" />
+    <None Include="web.config" />
     <Content Include="Views\Storefront\Account\MyOrders.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -411,12 +411,12 @@
       <Link>CustomDictionary.xml</Link>
     </CodeAnalysisDictionary>
   </ItemGroup>
-  <!--<PropertyGroup>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-  </PropertyGroup>-->
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!--<Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />-->
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
     <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />

@@ -97,9 +97,10 @@
     <Content Include="Scripts\bootstrap-1.2.1.min.js" />
     <Content Include="Content\Storefront\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\Storefront\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="packages.config">
+    <None Include="packages.config">
       <SubType>Designer</SubType>
-    </Content>
+    </None>
+    <None Include="Properties\PublishProfiles\Common.Settings.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -156,7 +157,7 @@
     <Content Include="Scripts\Storefront\ViewModels\wishlist_VM.js" />
     <Content Include="Scripts\Storefront\wishlist.js" />
     <None Include="Scripts\_references.js" />
-    <Content Include="web.config" />
+    <None Include="web.config" />
     <Content Include="Views\Storefront\Account\Addresses.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -277,7 +278,7 @@
     <Content Include="Views\Storefront\Checkout\StorefrontCheckout.cshtml" />
     <Content Include="Views\Storefront\Catalog\GiftCardPresentation.cshtml" />
     <Content Include="Views\Storefront\Catalog\ProductPresentation.cshtml" />
-    <Content Include="sharplinter.conf" />
+    <None Include="sharplinter.conf" />
     <Content Include="Views\Storefront\Shared\_PrintLayout.cshtml" />
     <Content Include="Views\Storefront\Shared\BlogListing.cshtml" />
     <Content Include="Views\Storefront\Shared\BlogContentDisplay.cshtml" />
