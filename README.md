@@ -19,7 +19,9 @@ Contributions to the demo is welcome and encouraged. A list of requested feature
 
 Issues with code, install or documentation should be entered as an [issue](https://github.com/Sitecore/sccs-demo/issues) and labeled as a __bug__.
 
-#### Copyright 2015 Sitecore Corporation A/S
+## Copyright 
+
+Copyright 2015 Sitecore Corporation A/S
 
 Licensed under the Apache License, Version 2.0 (the "License"); You may not use this solution except in compliance with the License.
 
