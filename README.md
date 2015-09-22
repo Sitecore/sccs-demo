@@ -11,11 +11,11 @@ Documentation and installation instructions specific to the demo can be found on
 
 ## Contributions
 
-Contributions to the demo is welcome and encouraged. A list of requested features prioritized by the Commerce team is available (here)[https://github.com/Sitecore/sccs-demo/issues?page=1&q=is%3Aopen+is%3Aissue+label%3Afeature]. Pull Requests will likely be merged based on this list, but other features are also welcome.
+Contributions to the demo is welcome and encouraged. A list of requested features prioritized by the Commerce team is available [here](https://github.com/Sitecore/sccs-demo/issues?page=1&q=is%3Aopen+is%3Aissue+label%3Afeature). Pull Requests will likely be merged based on this list, but other features are also welcome.
 
 ## Bugs
 
-Issues with code, install or documentation should be entered as an (issue)[https://github.com/Sitecore/sccs-demo/issues] and labeled as a __bug__.
+Issues with code, install or documentation should be entered as an [issue](https://github.com/Sitecore/sccs-demo/issues) and labeled as a __bug__.
 
 #### Copyright 2015 Sitecore Corporation A/S
 
