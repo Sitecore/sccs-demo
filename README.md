@@ -8,6 +8,7 @@ Documentation and installation instructions specific to the demo can be found on
 ## Releases
 
 [Sitecore Commerce Demo v1](https://github.com/Sitecore/sccs-demo/releases/tag/v1.0) - June 1, 2015
+
 [Sitecore Commerce Demo v1.1](https://github.com/Sitecore/sccs-demo/releases/tag/v1.1) - September 22, 2015
 
 ## Contributions
