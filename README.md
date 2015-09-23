@@ -1,4 +1,4 @@
-# Sitecore Commerce pb Commerce Server 
+## Sitecore Commerce pb Commerce Server Demo Source 
 
 The Sitecore Commerce powered by Commerce Server (SCpbCS) demo is based upon a version of the Reference Storefront provided by the product team. The Reference Storefront is a separate solution and can be found [here](https://github.com/Sitecore/Reference-Storefront/releases).
 
