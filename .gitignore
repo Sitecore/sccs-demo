@@ -19,3 +19,4 @@ bld/
 [Bb]in/
 [Oo]bj/
 packages/
+.vs/config/applicationhost.config
