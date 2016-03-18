@@ -121,6 +121,8 @@ namespace Sitecore.Reference.Storefront.Managers
                 visitorContext.SetCommerceUser(this.ResolveCommerceUser().Result);
 
                 this.CartManager.MergeCarts(storefront, visitorContext, anonymousVisitorId);
+
+                ResetMatchedPatterCardsField();
             }
 
             return isLoggedIn;
@@ -633,6 +635,15 @@ namespace Sitecore.Reference.Storefront.Managers
 
                 default:
                     return StorefrontManager.GetSystemMessage("UnknownMembershipProviderError");
+            }
+        }
+
+        private static void ResetMatchedPatterCardsField()
+        {
+            if (Context.User.Profile.GetPropertyValue("matched_pattern_cards") != null)
+            {
+                Context.User.Profile.SetPropertyValue("matched_pattern_cards", string.Empty);
+                Context.User.Profile.Save();
             }
         }
 

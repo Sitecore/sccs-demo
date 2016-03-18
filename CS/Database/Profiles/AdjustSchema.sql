@@ -64,6 +64,12 @@ BEGIN
 END
 GO
 
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'userobject' AND COLUMN_NAME = 'u_matched_pattern_cards')
+BEGIN
+	ALTER TABLE dbo.UserObject ADD u_matched_pattern_cards nvarchar(256) NULL
+END
+GO
+
 /********************
 	ADD INDEXES
 ********************/
