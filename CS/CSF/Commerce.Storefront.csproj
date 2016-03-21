@@ -270,7 +270,9 @@
     <None Include="Sitecore\Copyrights\WebActivatorEx_MSPL.txt" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Carts.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Catalog.config" />
-    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.config" />
+    <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Customer.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Index.Lucene.config" />
     <Content Include="App_Config\Include\Reference.Storefront\Reference.Storefront.Index.Solr.config.example" />
@@ -425,16 +427,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>38262</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59296/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

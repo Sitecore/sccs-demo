@@ -255,6 +255,7 @@
     <Compile Include="Services\VisitedProductDetailsPageResult.cs" />
     <Compile Include="SitecorePipelines\CatalogLinkProvider.cs" />
     <Compile Include="SitecorePipelines\OrderOutcome.cs" />
+    <Compile Include="SitecorePipelines\TrackUserPatternCardMatchingProcessor.cs" />
     <Compile Include="SitecorePipelines\ProductItemResolver.cs" />
     <Compile Include="SitecorePipelines\RegisterDataModelExtensionsBase.cs" />
     <Compile Include="SitecorePipelines\SecuredPageProcessor.cs" />
